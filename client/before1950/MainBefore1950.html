@@ -1,0 +1,24 @@
+<template name="MainBefore1950">
+    <div class="container center-align">
+        {{#if gameStarted}}
+            {{#if gameDone}}
+                <div class="row">
+                    <div class="dialog-container container-purple large-text white-text">
+                        <p>恭喜你通過了第一關考驗，獲得冒險家襟章一枚！接下來，你會透過不同任務收集到襟章，成為經驗豐富的冒險家！</p>
+                        <button id="before_1950_leave" class="btn-theme white">正式開始冒險吧！</button>
+                    </div>
+                </div>
+            {{else}}
+                {{> Before1950Game}}
+            {{/if}}
+        {{else}}
+            <div class="row">
+                <div class="dialog-container container-purple large-text white-text">
+                    <p>開始冒險之前，我們先去了解香港開埠前的歷史吧！</p>
+                    <p>以下會出現5條問題，測試一下你身為冒險家所需的知識！</p>
+                    <button id="start_before_1950_game" class="btn-theme white">開始</button>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</template>

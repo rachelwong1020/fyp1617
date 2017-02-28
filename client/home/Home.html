@@ -1,0 +1,15 @@
+<template name="Home">
+    <div class="container center-align">
+        <div class="row">
+            <div class="dialog-container container-purple large-text white-text">
+                {{#if isLogin}}
+                    <p>你好！我是明明！</p>
+                    <p>想跟我一起回到過去的香港冒險，體驗一下舊式香港各種事嗎？</p>
+                    <button id="start_game" class="btn-theme white">開始</button>
+                {{else}}
+                    {{> atForm}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

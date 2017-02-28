@@ -1,0 +1,17 @@
+<template name="Game1950Heat">
+    {{#if gameDone}}
+        <div class="row">
+            <div class="dialog-container container-purple large-text white-text">
+                <p>恭喜你通過了考驗，獲得勇氣襟章一枚！</p>
+                <p>你隨時都可以按《遊戲背景》翻查襟章列表啊！</p>
+                <button id="before_1950_leave" class="btn-theme white">知道了</button>
+            </div>
+        </div>
+    {{else}}
+        <div id="game_1950_heat" class="content">
+            <div class="container">
+                <div id="my-memory-game"></div>
+            </div>
+        </div>
+    {{/if}}
+</template>

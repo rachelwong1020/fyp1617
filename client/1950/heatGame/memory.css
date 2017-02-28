@@ -1,0 +1,289 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#game_1950_heat img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* container */
+#game_1950_heat .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+/* header */
+#game_1950_heat .header {
+  padding: 10px 10px 10px 40px;
+}
+
+.header__logo {
+  float: left;
+  margin-left: -30px;
+  width: 30px;
+  height: 30px;
+}
+
+.header__title {
+  float: right;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* content */
+#game_1950_heat .content {
+  padding: 20px;
+  background-color: #fff;
+}
+
+
+
+/* =============================================================================
+  MEMORY GAME (mg)
+============================================================================= */
+/**
+ * Game container
+ *
+ * This is the overall container for the game. Different things get addead and
+ * removed from this container depending on the game state.
+ */
+.mg {
+  /* blank */
+}
+
+/**
+ * Game wrapper
+ *
+ * The game wrapper is where the actual game resides. Inside here, all the
+ * memory tiles get arranged and ready for game play.
+ */
+.mg__wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mg__contents {
+  position: relative;
+  padding-bottom: 50%;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+/**
+ * Game tiles
+ *
+ * The game tiles are the tiles that are laid down on the memory game board.
+ * These tiles are the ones that the user clicks on to flip and reveal some
+ * images. The level the user selects determines the position and size of
+ * the tiles.
+ */
+.mg__tile {
+  position: absolute;
+  padding: 5px;
+}
+
+/* game__level-1 styles */
+.mg__level-1 .mg__tile {
+  width: 25%;
+  height: 50%;
+}
+
+.mg__level-1 .mg__tile-1 {
+  top: 0%;
+  left: 0%;
+}
+.mg__level-1 .mg__tile-2 {
+  top: 0%;
+  left: 25%;
+}
+.mg__level-1 .mg__tile-3 {
+  top: 0%;
+  left: 50%;
+}
+.mg__level-1 .mg__tile-4 {
+  top: 0%;
+  left: 75%;
+}
+.mg__level-1 .mg__tile-5 {
+  top: 50%;
+  left: 0%;
+}
+.mg__level-1 .mg__tile-6 {
+  top: 50%;
+  left: 25%;
+}
+.mg__level-1 .mg__tile-7 {
+  top: 50%;
+  left: 50%;
+}
+.mg__level-1 .mg__tile-8 {
+  top: 50%;
+  left: 75%;
+}
+
+/**
+ * The tile inside
+ *
+ * The "tile inner" is the part of the tile that serves as the card. Inside
+ * this part, there's an outside and inside part. The outside of the card
+ * is the part that has the logo or the pattern or whatever...basically the
+ * part that doesn't show the content to be matched. The inside part has the
+ * actual images / info to be matched.
+ */
+.mg__tile--inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.mg__tile--outside,
+.mg__tile--inside {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s, background 0.3s;
+          transition: transform 0.3s, background 0.3s;
+}
+
+.mg__tile--outside {
+  background-color: rgba(136,124,186,0.8);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.mg__tile--inside {
+  background-color: rgba(136,124,186,0.8);
+  box-shadow: 0 0 0 1px rgba(136,124,186,0.8);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+/* some transforms for flipped cards */
+.mg__tile--inner.flipped .mg__tile--outside {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.mg__tile--inner.flipped .mg__tile--inside {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+/* some transitions for correct guesses - only needs to happen on card inside */
+.mg__tile--inner.flipped.correct .mg__tile--inside {
+  background-color: rgb(230,178,114);
+}
+
+/**
+ * Game message
+ *
+ * The game message area is an area to display game messages. It's used in the
+ * default set up where no callback is set in the JS. If a callback is set up,
+ * then this message area likely won't display. Unless you decide to display it
+ * in your own custom callback though!
+ */
+.mg__onend {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.mg__onend--heading {
+  margin-bottom: 10px;
+  color: #28aadc;
+  font-size: 30px;
+}
+
+.mg__onend--message {
+  margin-bottom: 10px;
+}
+
+/**
+ * Game buttons
+ *
+ * A simple helper class for game buttons. Edit at your will.
+ */
+.mg__button {
+  margin: 0;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  appearance: none;
+  background: #ff3c50;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* =============================================================================
+  SOME SOCIAL STYLES
+============================================================================= */
+.fb-like,
+.twitter-share-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fb-like {
+  margin-right: 10px;
+}
+
+/* =============================================================================
+  FUSION ADS
+============================================================================= */
+/**
+ * Fusion ads styles
+ *
+ * These are all the styles for my fusion ads. I'd reccommend deleting them if
+ * you are going to use this in your own app, because they are useless and you
+ * shouldn't be displaying my ad on your app/site in the first place. Thanks!
+ */
+#fusionads {
+  display: inline-block;
+  padding: 5px;
+  background: white;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+#fusionads .fusion-wrap {
+  display: block;
+  margin: 0 0 5px 0;
+  width: 130px;
+}
+
+#fusionads a.fusion-text {
+  display: block;
+  color: #787a80;
+}
+
+#fusionads a.fusion-img {
+  display: block;
+  margin-bottom: 5px;
+  width: 130px;
+  height: 100px;
+  background-color: #fff;
+}
+
+#fusionads a.fusion-img img {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+#fusionads a.fusion-poweredby {
+  color: #28aadc;
+}

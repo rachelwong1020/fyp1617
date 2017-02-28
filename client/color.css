@@ -1,0 +1,12 @@
+.main-background-color {
+    background-color: rgb(132,205,187);
+}
+.container-purple {
+    background-color: rgba(127,99,147,0.6);
+    border-color: rgba(167,148,180,0.6);
+}
+.btn-theme.white {
+    background-color: rgb(312,229,214) !important;
+    color: rgb(127,99,147) !important;
+    border-color: rgb(197,194,206) !important;
+}

@@ -1,1 +1,74 @@
 /* CSS declarations go here */
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: auto !important;
+}
+.btn-theme {
+    font-size: 2rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    background: white !important;
+    border-width: 5px !important;
+    border-style: solid !important;
+    border-color: black !important;
+    border-radius: 15px !important;
+}
+.container.wide {
+    width: 95%;
+}
+.container.fluid {
+    width: 100%;
+}
+.dialog-container {
+    width: 55% !important;
+    height: 55% !important;
+    border-radius: 20px;
+    border-width: 9px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+.full-height {
+    height: 100vh;
+}
+input:focus, button:focus {
+    outline: none;
+}
+input::-webkit-input-placeholder {
+    color: black;
+}
+input::-moz-placeholder {
+    color: black;
+}
+input:-ms-input-placeholder {
+    color: black;
+}
+input:-moz-placeholder {
+    color: black;
+}
+input.white-text {
+    border-bottom-color: rgb(312,229,214) !important;
+}
+input.white-text::-webkit-input-placeholder {
+    color: rgb(312,229,214);
+}
+input.white-text::-moz-placeholder {
+    color: rgb(312,229,214);
+}
+input.white-text:-ms-input-placeholder {
+    color: rgb(312,229,214);
+}
+input.white-text:-moz-placeholder {
+    color: rgb(312,229,214);
+}
+.large-text {
+    font-size: 2rem !important;
+}
