@@ -45,6 +45,7 @@
 #main_game_layout #status_bar .score-container {
     width: 80%;
     min-height: 48px;
+    margin-top: 20px;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     padding-left: 0.4em;
@@ -53,6 +54,7 @@
     border-radius: 10px;
     border-width: 4px;
     border-style: solid;
+    float: right;
 }
 #main_game_layout #status_bar .status-btn {
     width: 80%;
@@ -64,6 +66,15 @@
     background-color: rgb(87,201,185);
     color: white;
     text-align: center;
+    float: right;
+    cursor: pointer;
+}
+#main_game_layout #status_bar .status-btn:hover {
+    background-color: rgba(87,201,185,0.7);
+}
+#main_game_layout #status_bar .score-icon {
+    height: 60px;
+    position: absolute;
 }
 #main_game_layout #status_bar .user-icon {
     height: 130px;

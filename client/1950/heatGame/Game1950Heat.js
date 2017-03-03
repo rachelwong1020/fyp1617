@@ -59,7 +59,6 @@ Template.Game1950Heat.helpers({
 
 Template.Game1950Heat.events({
     'click #before_1950_leave': function () {
-        Session.set('MainGameCheckPoints', Meteor.settings.public.mainGame.main1950.checkPoints);
         FlowRouter.go('1950-main-game');
     }
 });
