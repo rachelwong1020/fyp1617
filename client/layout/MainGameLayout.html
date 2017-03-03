@@ -2,18 +2,16 @@
     <header>
     </header>
     <main id="main_game_layout" class="pusher main-background-color">
-        <div id="side_nav_bar">
+        <div id="side_nav_bar" class="main-background-color">
             <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="collapsible-header">
-                        <button>Test</button>
-                    </div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                </li>
+                {{#each checkPoint}}
+                    <li>
+                        <div class="collapsible-header">
+                            <button class="{{btnClass}}">{{name}}</button>
+                        </div>
+                        <div class="collapsible-body"><span>{{description}}</span></div>
+                    </li>
+                {{/each}}
             </ul>
         </div>
         <div id="main_game_content"></div>

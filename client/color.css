@@ -10,3 +10,35 @@
     color: rgb(127,99,147) !important;
     border-color: rgb(197,194,206) !important;
 }
+.blue-btn, .blue-btn:focus {
+    background-color: #40BAF4;
+    border-color: #BADCF8;
+}
+.blue-btn:hover {
+    background-color: #79CFF7;
+    border-color: #CFE6FA;
+}
+.red-btn, .red-btn:focus {
+    background-color: #F07575;
+    border-color: #FBD7D7;
+}
+.red-btn:hover {
+    background-color: #F49E9E;
+    border-color: #FCE3E3;
+}
+.yellow-btn, .yellow-btn:focus {
+    background-color: #FDD311;
+    border-color: #FFFDD3;
+}
+.yellow-btn:hover {
+    background-color: #FEE058;
+    border-color: #FFFEE0;
+}
+.purple-btn, .purple-btn:focus {
+    background-color: #BC77EE;
+    border-color: #E1C3FB;
+}
+.purple-btn:hover {
+    background-color: #D0A0F3;
+    border-color: #EAD5FC;
+}

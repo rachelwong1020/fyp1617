@@ -75,7 +75,6 @@
         <item url="file://$USER_HOME$/.meteor/packages/allow-deny/1.0.5/web.browser/allow-deny.js" />
         <item url="file://$USER_HOME$/.meteor/packages/allow-deny/1.0.5/web.browser/allow-deny-tests.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-password/1.3.4/web.browser/password_tests_setup.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/materialize_materialize/0.98.0/web.browser/dist/js/materialize.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-password/1.3.4/web.browser/email_tests_setup.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-password/1.3.4/web.browser/password_client.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-password/1.3.4/web.browser/email_tests.js" />
@@ -467,7 +466,6 @@
       <root url="file://$USER_HOME$/.meteor/packages/allow-deny/1.0.5/web.browser/allow-deny.js" />
       <root url="file://$USER_HOME$/.meteor/packages/allow-deny/1.0.5/web.browser/allow-deny-tests.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-password/1.3.4/web.browser/password_tests_setup.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/materialize_materialize/0.98.0/web.browser/dist/js/materialize.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-password/1.3.4/web.browser/email_tests_setup.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-password/1.3.4/web.browser/password_client.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-password/1.3.4/web.browser/email_tests.js" />
