@@ -49,7 +49,6 @@ livedata@1.0.18
 localstorage@1.0.12
 logging@1.1.17
 matb33:collection-hooks@0.8.4
-materialize:materialize@0.98.0
 meteor@1.6.1
 meteor-base@1.0.4
 meteortoys:allthings@3.0.0
