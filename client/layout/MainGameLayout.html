@@ -14,38 +14,41 @@
                 {{/each}}
             </ul>
         </div>
-        <div id="main_game_content"></div>
+        <div id="main_game_content" style="background-image: url(/resources/layout/map.svg);">
+
+        </div>
         <div id="status_bar">
             <div class="container fluid main-background-color">
                 <div class="row">
-                    <div class="col m2 s12">
-                        <div class="row">
-                            <div class="col s6"></div>
-                            <div class="col s6"></div>
-                        </div>
+                    <div class="col m2 s12 center-align">
+                        <img src="/resources/character/mainBoy.png" class="user-icon">
                     </div>
                     <div class="col m5 s12">
                         <div class="row">
-                            <div class="col s6">
+                            <div class="col m6 s12">
                                 <div class="score-container white-text blue-score"></div>
                             </div>
-                            <div class="col s6">
+                            <div class="col m6 s12">
                                 <div class="score-container white-text yellow-score"></div>
                             </div>
                         </div>
                     </div>
                     <div class="col m5 s12">
                         <div class="row">
-                            <div class="col s6">
+                            <div class="col m6 s12">
                                 <div class="score-container white-text red-score"></div>
                             </div>
-                            <div class="col s6">
+                            <div class="col m6 s12">
                                 <div class="score-container white-text green-score"></div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col s6"></div>
-                            <div class="col s6"></div>
+                            <div class="col s6">
+                                <div id="game_background" class="status-btn">遊戲背景</div>
+                            </div>
+                            <div class="col s6">
+                                <div id="game_badge" class="status-btn">徽章</div>
+                            </div>
                         </div>
                     </div>
                 </div>

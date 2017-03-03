@@ -54,6 +54,20 @@
     border-width: 4px;
     border-style: solid;
 }
+#main_game_layout #status_bar .status-btn {
+    width: 80%;
+    min-height: 40px;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 1.64rem;
+    border-radius: 20px;
+    background-color: rgb(87,201,185);
+    color: white;
+    text-align: center;
+}
+#main_game_layout #status_bar .user-icon {
+    height: 130px;
+}
 #main_game_layout #main_game_content {
     width: calc(100vw - 170px);
     height: calc(100vh - 162px);
@@ -61,4 +75,7 @@
     top: 0;
     right: 0;
     background-color: aquamarine;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
