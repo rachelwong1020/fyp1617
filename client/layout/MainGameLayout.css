@@ -36,6 +36,7 @@
     right: 0;
 }
 #main_game_layout #status_bar > .container {
+    max-width: 100%;
     height: 150%;
     margin: 0;
     border-radius: 3em;
