@@ -9,14 +9,47 @@
                         <div class="collapsible-header">
                             <button class="{{btnClass}}">{{name}}</button>
                         </div>
-                        <div class="collapsible-body"><span>{{description}}</span></div>
+                        <div class="collapsible-body"><span class="white-text">{{description}}</span></div>
                     </li>
                 {{/each}}
             </ul>
         </div>
         <div id="main_game_content"></div>
         <div id="status_bar">
-
+            <div class="container fluid main-background-color">
+                <div class="row">
+                    <div class="col m2 s12">
+                        <div class="row">
+                            <div class="col s6"></div>
+                            <div class="col s6"></div>
+                        </div>
+                    </div>
+                    <div class="col m5 s12">
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="score-container white-text blue-score"></div>
+                            </div>
+                            <div class="col s6">
+                                <div class="score-container white-text yellow-score"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m5 s12">
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="score-container white-text red-score"></div>
+                            </div>
+                            <div class="col s6">
+                                <div class="score-container white-text green-score"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s6"></div>
+                            <div class="col s6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </template>

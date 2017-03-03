@@ -34,11 +34,29 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    background-color: #ff3c50;
+}
+#main_game_layout #status_bar > .container {
+    height: 150%;
+    margin: 0;
+    border-radius: 3em;
+    border: 6px solid white;
+    padding: 2em;
+}
+#main_game_layout #status_bar .score-container {
+    width: 80%;
+    min-height: 48px;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 1.64rem;
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
 }
 #main_game_layout #main_game_content {
     width: calc(100vw - 170px);
-    height: calc(100vh - 189px);
+    height: calc(100vh - 162px);
     position: fixed;
     top: 0;
     right: 0;

@@ -1,5 +1,5 @@
 .main-background-color {
-    background-color: rgb(132,205,187);
+    background-color: rgb(119,226,197);
 }
 .container-purple {
     background-color: rgba(127,99,147,0.6);
@@ -12,6 +12,9 @@
 }
 .blue-btn, .blue-btn:focus {
     background-color: #40BAF4;
+    -moz-box-shadow:    inset 0 0 7px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 7px #6b6b6b;
+    box-shadow:         inset 0 0 7px #6b6b6b;
     border-color: #BADCF8;
 }
 .blue-btn:hover {
@@ -20,6 +23,9 @@
 }
 .red-btn, .red-btn:focus {
     background-color: #F07575;
+    -moz-box-shadow:    inset 0 0 7px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 7px #6b6b6b;
+    box-shadow:         inset 0 0 7px #6b6b6b;
     border-color: #FBD7D7;
 }
 .red-btn:hover {
@@ -28,6 +34,9 @@
 }
 .yellow-btn, .yellow-btn:focus {
     background-color: #FDD311;
+    -moz-box-shadow:    inset 0 0 7px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 7px #6b6b6b;
+    box-shadow:         inset 0 0 7px #6b6b6b;
     border-color: #FFFDD3;
 }
 .yellow-btn:hover {
@@ -36,9 +45,28 @@
 }
 .purple-btn, .purple-btn:focus {
     background-color: #BC77EE;
+    -moz-box-shadow:    inset 0 0 7px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 7px #6b6b6b;
+    box-shadow:         inset 0 0 7px #6b6b6b;
     border-color: #E1C3FB;
 }
 .purple-btn:hover {
     background-color: #D0A0F3;
     border-color: #EAD5FC;
+}
+.blue-score {
+    background-color: rgb(116,206,253);
+    border-color: rgb(70,188,252);
+}
+.yellow-score {
+    background-color: rgb(254,218,72);
+    border-color: rgb(254,201,49);
+}
+.red-score {
+    background-color: rgb(229,115,116);
+    border-color: rgb(202,54,48);
+}
+.green-score {
+    background-color: rgb(183,220,199);
+    border-color: rgb(15,118,70);
 }
