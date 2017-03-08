@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 25/2/2017.
- */
 Template.MainBefore1950.helpers({
     gameDone: function () {
         return Session.get('gameBefore1950Done');

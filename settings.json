@@ -23,7 +23,7 @@
           },
           {
             "name": "粵劇院",
-            "for": "cantonese_theater",
+            "for": "opera",
             "btnClass": "red-btn",
             "description": "在粵劇院裡你可以欣賞舊式粵劇，獲得(開心icon)最多1200！"
           },
@@ -41,7 +41,7 @@
           },
           {
             "name": "時裝店",
-            "for": "boutiques",
+            "for": "boutique",
             "btnClass": "yellow-btn",
             "description": "以前香港人喜愛找裁縫度身訂造衣服，你可以親身體驗一下，賺取金錢吧！"
           }

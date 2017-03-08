@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 25/2/2017.
- */
 Template.Game1950Heat.onRendered(function () {
     if(!Session.get('game1950HeatDone')) {
         (function(){
