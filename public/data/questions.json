@@ -1,5 +1,745 @@
 [
-  {
-
-  }
+{
+	questionNumber: 0,
+	decade: 'before50s',
+	type: 'mc',
+	question: '香港在多少年前已經有人居住？',
+	options: [
+	'四千多年前',
+	'五千多年前',
+	'六千多年前',
+	'七千多年前'
+	],
+	answer: 2
+},
+{
+	questionNumber: 1,
+	decade: 'before50s',
+	type: 'mc',
+	question: '香港開埠前，居民多以甚麼為生？',
+	options: [
+	'捕魚及狩獵',
+	'農業耕作',
+	'飼養畜牧'
+	],
+	answer: 0
+}
+{
+	questionNumber: 2,
+	decade: 'before50s',
+	type: 'mc',
+	question: '香港早期居民的遺蹟大部分在哪裏？',
+	options: [
+	'海岸附近',
+	'山林附近',
+	'水塘附近',
+	'沼澤附近'
+	],
+	answer: 0
+}
+{
+	questionNumber: 3,
+	decade: 'before50s',
+	type: 'mc',
+	question: '東涌炮台是為了抵禦誰的侵擾而修建的？',
+	options: [
+	'日軍',
+	'英軍',
+	'難民',
+	'海盜'
+	],
+	answer: 3
+}
+{
+	questionNumber: 4,
+	decade: 'before50s',
+	type: 'mc',
+	question: '1842年，以下哪個國家開始管治香港？',
+	options: [
+	'日本',
+	'英國',
+	'美國',
+	'法國'
+	],
+	answer: 1
+}
+{
+	questionNumber: 5,
+	decade: 'before50s',
+	type: 'mc',
+	question: '清政府與英國簽訂《南京條約》後，____被英國管治。',
+	options: [
+	'新界',
+	'九龍',
+	'香港島'
+	],
+	answer: 2
+}
+{
+	questionNumber: 6,
+	decade: 'before50s',
+	type: 'mc',
+	question: '____是指香港自1842年開始受英國管治，逐漸發展成為商埠？',
+	options: [
+	'殖民統治',
+	'香港之割',
+	'開埠'
+	],
+	answer: 2
+}
+{
+	questionNumber: 7,
+	decade: 'before50s',
+	type: 'mc',
+	question: '香港開埠後，隨着人口大量增加，____及建設相繼出現？',
+	options: [
+	'公共事業',
+	'農業',
+	'畜牧業'
+	],
+	answer: 0
+}
+{
+	questionNumber: 8,
+	decade: 'before50s',
+	type: 'mc',
+	question: '香港開埠後，____的供應、水塘及____的興建等相繼出現？',
+	options: [
+	'石油氣、大廈',
+	'煤氣、鐵路',
+	'住屋、港口'
+	],
+	answer: 1
+}
+{
+	questionNumber: 9,
+	decade: 'before50s',
+	type: 'mc',
+	question: '第二次世界大戰期間，香港被____統治，人們過着艱苦的生活，和平紀念碑正正提醒人們這次戰爭的可怕。',
+	options: [
+	'英軍',
+	'美軍',
+	'日軍'
+	],
+	answer: 2
+}
+{
+	questionNumber: 10,
+	decade: 'before50s',
+	type: 'mc',
+	question: '____世界大戰期間，香港被日軍統治，香港經歷了____的淪陷歲月。',
+	options: [
+	'第一次、四年零八個月',
+	'第二次、三年零八個月',
+	'第三次、三年零五個月'
+	],
+	answer: 1
+}
+{
+	questionNumber: 11,
+	decade: 'before50s',
+	type: 'mc',
+	question: '「修建東涌炮台加強海防」是哪個朝代的歷史事件？',
+	options: [
+	'清朝',
+	'宋朝',
+	'唐朝',
+	'元朝'
+	],
+	answer: 0
+}
+{
+	questionNumber: 12,
+	decade: 'before50s',
+	type: 'mc',
+	question: '「當朝皇帝逃難至九龍城，在該地的一座小山上暫留」是哪個朝代的歷史事件？',
+	options: [
+	'唐朝',
+	'宋朝',
+	'清朝',
+	'元朝'
+	],
+	answer: 1
+}
+{
+	questionNumber: 13,
+	decade: 'before50s',
+	type: 'mc',
+	question: '吉慶圍與哪件歷史事件有關？',
+	options: [
+	'1698年，英國接管香港島，吉慶圍鄉民羣起反抗。',
+	'1798年，英國接管九龍半島，吉慶圍鄉民羣起反抗。',
+	'1898年，英國接管新界，吉慶圍鄉民羣起反抗。'
+	],
+	answer: 2
+}
+{
+	questionNumber: 14,
+	decade: 'before50s',
+	type: 'mc',
+	question: '聚星樓位於香港哪條文物徑？',
+	options: [
+	'屏山文物徑',
+	'龍躍頭文物徑',
+	'中西區文物徑'
+	],
+	answer: 0
+}
+{
+	questionNumber: 15,
+	decade: 'before50s',
+	type: 'mc',
+	question: '龍躍頭文物徑位於香港哪區？',
+	options: [
+	'九龍東區',
+	'中西區',
+	'新界西區',
+	'新界北區'
+	],
+	answer: 3
+}
+{
+	questionNumber: 16,
+	decade: 'before50s',
+	type: 'mc',
+	question: '位於西區的魯班先師廟，是供奉哪個行業的先師？',
+	options: [
+	'漁農業',
+	'畜牧業',
+	'建築業'
+	],
+	answer: 2
+}
+{
+	questionNumber: 17,
+	decade: 'before50s',
+	type: 'mc',
+	question: '哪個是香港最早興建的水塘？',
+	options: [
+	'薄扶林水塘',
+	'城門水塘',
+	'萬宜水庫',
+	'大潭上水塘'
+	],
+	answer: 0
+}
+{
+	questionNumber: 18,
+	decade: 'before50s',
+	type: 'mc',
+	question: '李鄭屋漢墓修建於哪個朝代？',
+	options: [
+	'唐朝',
+	'宋朝',
+	'漢朝',
+	'明朝'
+	],
+	answer: 2
+}
+{
+	questionNumber: 19,
+	decade: 'before50s',
+	type: 'mc',
+	question: '以下哪些是在李鄭屋漢墓發現的文物？',
+	options: [
+	'金屋模型',
+	'石屋模型',
+	'木屋模型',
+	'陶屋模型'
+	],
+	answer: 3
+}
+{
+	questionNumber:20,
+	decade: 'before50s',
+	type: 'mc',
+	question: '宋王臺是為紀念甚麼事情而建立的？',
+	options: [
+	'宋朝皇帝在九龍城祭祀祖先',
+	'宋朝皇帝在九龍城打勝仗',
+	'宋朝皇帝在九龍城登基',
+	'宋朝皇帝逃難至九龍城'
+	],
+	answer: 3
+}
+{
+	questionNumber: 21,
+	decade: 'before50s',
+	type: 'mc',
+	question: '以下哪個姓氏是宋朝年間從中國內地遷移至香港的五大姓族之一？',
+	options: [
+	'郭',
+	'劉',
+	'廖',
+	'朱'
+	],
+	answer: 2
+}
+{
+	questionNumber: 22,
+	decade: 'before50s',
+	type: 'mc',
+	question: '以下哪項不是從中國內地遷移至香港的五大姓族？',
+	options: [
+	'文',
+	'鄧',
+	'廖',
+	'黃'
+	],
+	answer: 3
+}
+{
+	questionNumber: 23,
+	decade: 'before50s',
+	type: 'mc',
+	question: '中國五大姓族在甚麼時候先後來到香港，並在新界定居？',
+	options: [
+	'元朝以後',
+	'清朝以後',
+	'宋朝以後',
+	'明朝以後'
+	],
+	answer: 2
+}
+{
+	questionNumber: 24,
+	decade: '50s',
+	type: 'mc',
+	question: '哪間是香港最早興建的華人醫院？',
+	options: [
+	'西營盤醫院',
+	'那打素醫院',
+	'瑪麗醫院',
+	'東華醫院'
+	],
+	answer: 3
+}
+{
+	questionNumber: 25,
+	decade: '50s',
+	type: 'mc',
+	question: '中環的和平紀念碑紀念哪個時期的人和事？',
+	options: [
+	'香港回歸',
+	'香港保衛戰',
+	'第一次世界大戰',
+	'第二次世界大戰'
+	],
+	answer: 3
+}
+{
+	questionNumber: 26,
+	decade: '50s',
+	type: 'mc',
+	question: '現在的茶館文物館在英國管治時期有甚麼用途？',
+	options: [
+	'總督官邸',
+	'舊三軍司令官邸',
+	'舊最高法院',
+	'前法國外方傳道會大樓'
+	],
+	answer: 1
+}
+{
+	questionNumber: 27,
+	decade: '50s',
+	type: 'mc',
+	question: '英國委任的第一任香港總督是誰？',
+	options: [
+	'彭定康',
+	'董建華',
+	'戴維斯爵士',
+	'砵甸乍爵士'
+	],
+	answer: 3
+}
+{
+	questionNumber: 28,
+	decade: '50s',
+	type: 'mc',
+	question: '以下哪項是香港開埠以後的古蹟？',
+	options: [
+	'總督府',
+	'東涌炮台',
+	'宋王臺',
+	'鄧氏宗祠'
+	],
+	answer: 0
+}
+{
+	questionNumber: 29,
+	decade: '50s',
+	type: 'mc',
+	question: '以下哪項不是英國管治時期的代表建築物？',
+	options: [
+	'國際金融中心第二期',
+	'前立法會大樓',
+	'終審法院',
+	'總督府'
+	],
+	answer: 0
+}
+{
+	questionNumber: 30,
+	decade: '50s',
+	type: 'mc',
+	question: '香港禮賓府原是____，是____管治時期的代表建築物。',
+	options: [
+	'首相府、日本',
+	'皇家府、日本',
+	'特首府、英國',
+	'總督府、英國'
+	],
+	answer: 3
+}
+{
+	questionNumber: 31,
+	decade: '50s',
+	type: 'mc',
+	question: '以下哪項原因促使香港在50年代轉為發展工業？',
+	options: [
+	'香港不再實施自由港政策',
+	'本地工資上升',
+	'聯合國對中國實施禁運',
+	'大部分香港的居民轉去當農民或漁民'
+	],
+	answer: 2
+}
+{
+	questionNumber: 32,
+	decade: '50s',
+	type: 'mc',
+	question: '1950年中國發生甚麼事件，令香港的轉口貿易受打擊，並轉為發展工業？',
+	options: [
+	'中日戰爆發，令聯合國對中國實施禁運',
+	'韓戰爆發，令聯合國對中國實施禁運',
+	'美戰爆發，令聯合國對中國實施禁運',
+	'英戰爆發，令聯合國對中國實施禁運'
+	],
+	answer: 1
+}
+{
+	questionNumber: 33,
+	decade: '50s',
+	type: 'mc',
+	question: '哪項不是香港在50年代發展蓬勃的行業？',
+	options: [
+	'製衣業',
+	'塑膠業',
+	'玩具業',
+	'金融業'
+	],
+	answer: 3
+}
+{
+	questionNumber: 34,
+	decade: '50s',
+	type: 'tf',
+	question: '由於人口激增，很多人擅自在山邊搭建居所，出現大量木屋。',
+	answer: true
+}
+{
+	questionNumber: 35,
+	decade: '50s',
+	type: 'tf',
+	question: '香港開放成為自由港後開始發展轉口貿易',
+	answer: true
+}
+{
+	questionNumber: 36,
+	decade: '50s',
+	type: 'tf',
+	question: '香港開放成為自由港後以造船業為主',
+	answer: false
+}
+{
+	questionNumber: 37,
+	decade: '60s',
+	type: 'mc',
+	question: '以下哪項是香港早期的重要建設？',
+	options: [
+	'碼頭',
+	'天后廟',
+	'火車站',
+	'發電廠'
+	],
+	answer: 2
+}
+{
+	questionNumber: 38,
+	decade: '60s',
+	type: 'tf',
+	question: '不少業主把唐樓單位分為多個板間房出租。',
+	answer: true
+}
+{
+	questionNumber: 39,
+	decade: '60s',
+	type: 'tf',
+	question: '政府廉租屋是政府於1962至1973年推行的建屋計劃，為低收入人士提供的住屋計劃。',
+	answer: true
+}
+{
+	questionNumber: 40,
+	decade: '60s',
+	type: 'tf',
+	question: '木屋是在岸邊搭建，容易受到洪水的襲擊。',
+	answer: false
+}
+{
+	questionNumber: 41,
+	decade: '60s',
+	type: 'tf',
+	question: '木屋衞生情況差、面積小，很多活動要在屋外進行。',
+	answer: true
+}
+{
+	questionNumber: 42,
+	decade: '60s',
+	type: 'mc',
+	question: '雷生春底層原來是甚麼類型的店鋪？',
+	options: [
+	'中醫診所',
+	'洋服店',
+	'跌打藥店'
+	],
+	answer: 2
+}
+{
+	questionNumber: 43,
+	decade: '60s',
+	type: 'open',
+	question: '舉出三條以總督命名的街道名稱。',
+}
+{
+	questionNumber: 44,
+	decade: '60s',
+	type: 'mc',
+	question: '景賢里位於哪裡？',
+	options: [
+	'新界',
+	'九龍',
+	'香港島'
+	],
+	answer: 2
+}
+{
+	questionNumber: 45,
+	decade: '60s',
+	type: 'mc',
+	question: '青山禪院是在哪個古蹟的遺址上修建的？',
+	options: [
+	'長山古寺',
+	'杯渡寺',
+	'文武廟'
+	],
+	answer: 1
+}
+{
+	questionNumber: 46,
+	decade: '70s',
+	type: 'tf',
+	question: '徙置大廈是政府為安置災民而興建的房屋，單位沒有獨立洗手間。',
+	answer: true
+}
+{
+	questionNumber: 47,
+	decade: '70s',
+	type: 'mc',
+	question: '以下哪些行業不是在香港60至70年代蓬勃發展？',
+	options: [
+	'銀行業',
+	'紡織業',
+	'成衣業',
+	'塑膠業'
+	],
+	answer: 0
+}
+{
+	questionNumber: 48,
+	decade: '70s',
+	type: 'open',
+	question: '60至70年代，香港工業發展蓬勃，主要有甚麼工業？',
+}
+{
+	questionNumber: 49,
+	decade: '70s',
+	type: 'tf',
+	question: '60至70年代在香港興盛的行業是電子業。',
+	answer: true
+}
+{
+	questionNumber: 50,
+	decade: '70s',
+	type: 'tf',
+	question: '60至70年代在香港興盛的行業是製衣業。',
+	answer: true
+}
+{
+	questionNumber: 51,
+	decade: '70s',
+	type: 'tf',
+	question: '60至70年代在香港興盛的行業是塑膠業。',
+	answer: true
+}
+{
+	questionNumber: 52,
+	decade: '70s',
+	type: 'tf',
+	question: '60至70年代製造業發展蓬勃。',
+	answer: true
+}
+{
+	questionNumber: 53,
+	decade: '70s',
+	type: 'tf',
+	question: '60至70年代以農業及漁業為主。',
+	answer: false
+}
+{
+	questionNumber: 54,
+	decade: '70s',
+	type: 'open',
+	question: '香港的對外貿易主要有哪些類型？',
+}
+{
+	questionNumber: 55,
+	decade: '70s',
+	type: 'open',
+	question: '哪兩種類型的對外貿易能為香港帶來收入？',
+}
+{
+	questionNumber: 56,
+	decade: '70s',
+	type: 'tf',
+	question: '居者有其屋是政府為安置災民而興建的房屋，單位沒有獨立洗手間。',
+	answer: false
+}
+{
+	questionNumber: 57,
+	decade: '80s',
+	type: 'mc',
+	question: '以下哪項是香港有利營商的原因？',
+	options: [
+	'風景優美',
+	'實施自由貿易政策',
+	'高稅率',
+	'低工資'
+	],
+	answer: 1
+}
+{
+	questionNumber: 58,
+	decade: '80s',
+	type: 'mc',
+	question: '以下哪項是香港發展成為轉口港的原因？',
+	options: [
+	'本地工資和租金上升',
+	'很多中國內地的工業家帶着金錢和技術來港',
+	'實施自由港政策',
+	'實施自由港政策'
+	],
+	answer: 2
+}
+{
+	questionNumber: 59,
+	decade: '80s',
+	type: 'mc',
+	question: '以下哪些不是香港的出口貨品？',
+	options: [
+	'金屬廢料',
+	'首飾',
+	'汽車',
+	'寶石'
+	],
+	answer: 2
+}
+{
+	questionNumber: 60,
+	decade: '80s',
+	type: 'mc',
+	question: '以下哪些不是對外貿易為香港帶來的好處？',
+	options: [
+	'改善人們的生活質素',
+	'賺取外匯收益',
+	'解決資源不足的問題',
+	'減少勞工需求'
+	],
+	answer: 3
+}
+{
+	questionNumber: 61,
+	decade: '80s',
+	type: 'mc',
+	question: '以下哪些不是過去香港曾發展的工業項目？',
+	options: [
+	'電子業',
+	'汽車業',
+	'玩具業',
+	'製衣業'
+	],
+	answer: 1
+}
+{
+	questionNumber: 62,
+	decade: '80s',
+	type: 'mc',
+	question: '以下哪項不是香港製造業在80年代面對的問題？',
+	options: [
+	'本地的租金上升',
+	'香港出口受到工業國的貿易限制',
+	'本地工資上升',
+	'本地勞工需求和工資下降'
+	],
+	answer: 3
+}
+{
+	questionNumber: 63,
+	decade: '80s',
+	type: 'mc',
+	question: '以下哪種行業是金融業？',
+	options: [
+	'製造業',
+	'旅遊業',
+	'造船業',
+	'外匯業'
+	],
+	answer: 3
+}
+{
+	questionNumber: 64,
+	decade: '80s',
+	type: 'tf',
+	question: '80年代中期以後，在香港興盛的行業是金融業。',
+	answer: true
+}
+}
+{
+	questionNumber: 65,
+	decade: '80s',
+	type: 'tf',
+	question: '80年代中期以後，在香港興盛的行業是服務業。',
+	answer: true
+}
+{
+	questionNumber: 66,
+	decade: '80s',
+	type: 'tf',
+	question: '80年代中期以後，在香港興盛的行業是酒店業。',
+	answer: true
+}
+{
+	questionNumber: 67,
+	decade: '80s',
+	type: 'tf',
+	question: '80年代中期以後旅遊業逐漸衰落。',
+	answer: false
+}
+{
+	questionNumber: 68,
+	decade: '80s',
+	type: 'tf',
+	question: '80年代中期以後由製造業轉向發展服務業，並重新發展轉口貿易',
+	answer: true
+}
 ]
