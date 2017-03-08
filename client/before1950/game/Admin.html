@@ -1,0 +1,52 @@
+<template name="Before1950Admin">
+    <div class="container wide">
+        <h1>Before 1950 Questions</h1>
+        <form>
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input id="file" type="file">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Update your questions.">
+                </div>
+            </div>
+            <div class="row">
+                <a id="upload_questions" class="btn">Upload</a>
+            </div>
+        </form>
+        <div class="row">
+            {{#each questions}}
+                <div class="col s12 m4">
+                    <div class="card-panel hoverable question-card">
+                        <h6>{{question}}</h6>
+                        {{#if isQuestionType 'mc'}}
+                            {{#each mcOptions}}
+                                <div class="row">
+                                    {{this}}
+                                    <div class="progress">
+                                        <div class="determinate" style="width: {{mcResponseCount}}"></div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        {{/if}}
+                        {{#if isQuestionType 'tf'}}
+                            <div class="row">
+                                正確
+                                <div class="progress">
+                                    <div class="determinate" style="width: {{mcResponseCount}}"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                錯誤
+                                <div class="progress">
+                                    <div class="determinate" style="width: {{mcResponseCount}}"></div>
+                                </div>
+                            </div>
+                        {{/if}}
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</template>

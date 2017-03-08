@@ -1,0 +1,7 @@
+.question-card {
+    height: 300px;
+    overflow: scroll;
+}
+.question-card > .row {
+    margin-bottom: 0;
+}
