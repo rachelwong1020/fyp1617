@@ -198,6 +198,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/useraccounts_core/1.14.2/web.browser/lib/templates_helpers/at_social.js" />
         <item url="file://$USER_HOME$/.meteor/packages/meteortoys_email/3.0.0/web.browser/config/config.css" />
         <item url="file://$USER_HOME$/.meteor/packages/rate-limit/1.0.6/web.browser/rate-limit.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/mrt_jquery-ui/1.9.2/web.browser/packages/mrt:jquery-ui.js" />
         <item url="file://$USER_HOME$/.meteor/packages/meteortoys_email/3.0.0/web.browser/client/content.js" />
         <item url="file://$USER_HOME$/.meteor/packages/session/1.1.7/web.browser/session.js" />
         <item url="file://$USER_HOME$/.meteor/packages/useraccounts_core/1.14.2/web.browser/lib/templates_helpers/at_signin_link.js" />
@@ -589,6 +590,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/useraccounts_core/1.14.2/web.browser/lib/templates_helpers/at_social.js" />
       <root url="file://$USER_HOME$/.meteor/packages/meteortoys_email/3.0.0/web.browser/config/config.css" />
       <root url="file://$USER_HOME$/.meteor/packages/rate-limit/1.0.6/web.browser/rate-limit.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/mrt_jquery-ui/1.9.2/web.browser/packages/mrt:jquery-ui.js" />
       <root url="file://$USER_HOME$/.meteor/packages/meteortoys_email/3.0.0/web.browser/client/content.js" />
       <root url="file://$USER_HOME$/.meteor/packages/session/1.1.7/web.browser/session.js" />
       <root url="file://$USER_HOME$/.meteor/packages/useraccounts_core/1.14.2/web.browser/lib/templates_helpers/at_signin_link.js" />

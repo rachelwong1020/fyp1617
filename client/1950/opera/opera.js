@@ -11,8 +11,10 @@ var operas = [
 Template.opera.onRendered(function () {
     $('.modal').modal({
         ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-            alert("Ready");
-            console.log(modal, trigger);
+            videojs(
+                "opera_video",
+                {"controls": true, "autoplay": true,"techOrder":["html5"],preload:"auto"},
+            );
         },
     });
 });
