@@ -10,6 +10,7 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/style/JetSetter.css" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/main.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/functions.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/mrt_jquery-ui/1.9.2/web.browser/packages/mrt_jquery-ui.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/row/main.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/row_dict/main.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/_component/component.js" />
@@ -401,6 +402,7 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/style/JetSetter.css" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/main.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/functions.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/mrt_jquery-ui/1.9.2/web.browser/packages/mrt_jquery-ui.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/row/main.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/row_dict/main.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/msavin_jetsetter/2.0.0/web.browser/client/_component/component.js" />

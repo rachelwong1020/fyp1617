@@ -78,6 +78,7 @@ modules-runtime@0.7.9
 momentjs:moment@2.17.1
 mongo@1.1.15
 mongo-id@1.0.6
+mrt:jquery-ui@1.9.2
 msavin:jetsetter@2.0.0
 msavin:mongol@2.0.1
 natestrauser:animate-css@3.5.1
