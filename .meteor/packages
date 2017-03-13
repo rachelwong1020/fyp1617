@@ -37,6 +37,7 @@ momentjs:moment                         # Parse, validate, manipulate, and displ
 aldeed:template-extension               # Customize template
 harrison:papa-parse
 matb33:collection-hooks                 # Extends Mongo.Collection with before/after hooks for insert/update/remove/find/findOne
+jrudio:videojs
 
 useraccounts:unstyled                   # The unstyled version of accounts UI
 service-configuration                   # Manage the configuration for third-party services

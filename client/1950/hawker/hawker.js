@@ -14,7 +14,7 @@ Template.hawker.onRendered(function () {
 
 Template.hawker.helpers({
     gameDone: function () {
-        return Session.get('game1950HwakerDone');
+        return Session.get('game1950HawkerDone');
     }
 });
 
@@ -71,7 +71,7 @@ function handleCardDrop( event, ui ) {
     // and reset the cards for another go
 
     if ( correctCards == 3 ) {
-        Session.set('game1950HwakerDone', true);
+        Session.set('game1950HawkerDone', true);
     }
 
 }
