@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 8/3/2017.
- */
 var Before1950QuestionsCollections = new Mongo.Collection('before1950Questions');
 
 Meteor.publish('allBefore1950Questions', function () {

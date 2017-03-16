@@ -1,6 +1,3 @@
-/**
- * Created by Rachel on 8/3/2017.
- */
 var imageRelationship = [
     {upperNumber: 1, lowerString: 'one', beforeImg: 'central_LiYuenStEast_before.png', afterImg: 'central_LiYuenStEast_after.png'},
     {upperNumber: 2, lowerString: 'two', beforeImg: 'ssp_PeiHoSt_before.png', afterImg: 'ssp_PeiHoSt_after.png'},
@@ -46,7 +43,6 @@ function init() {
             drop: handleCardDrop
         } ).css('background-image', 'url(/resources/games/Game1950hawker/img/'+imageRelationship[i-1].afterImg+')');
     }
-
 }
 
 function handleCardDrop( event, ui ) {
@@ -65,6 +61,7 @@ function handleCardDrop( event, ui ) {
         ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
         ui.draggable.draggable( 'option', 'revert', false );
         correctCards++;
+        
     }
 
     // If all the cards have been placed correctly then display a message
@@ -73,5 +70,4 @@ function handleCardDrop( event, ui ) {
     if ( correctCards == 3 ) {
         Session.set('game1950HawkerDone', true);
     }
-
 }

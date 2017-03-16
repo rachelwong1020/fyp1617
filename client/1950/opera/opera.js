@@ -1,6 +1,3 @@
-/**
- * Created by Rachel on 13/3/2017.
- */
 var operas = [
     {name: '鳳閣恩仇未了情', coverImg: '1鳳閣恩仇未了情.png', description: '講述一名金朝將軍在護送郡主前往出嫁的路上，二人依依不捨之情。', video: '1鳳閣恩仇未了情.mp4'},
     {name: '四郎探母', coverImg: '2四郎探母.png', description: '講述北宋時期四郎因思母，得公主出策助其出關，與家人團聚。', video: '2四郎探母.mp4'},

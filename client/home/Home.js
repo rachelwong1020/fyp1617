@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 25/2/2017.
- */
 Template.Home.helpers({
 
 });

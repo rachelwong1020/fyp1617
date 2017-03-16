@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 8/3/2017.
- */
 Template.Before1950Admin.onCreated(function () {
     this.autorun(() => {
         this.subscribe('allBefore1950Questions');
