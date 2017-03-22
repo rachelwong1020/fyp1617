@@ -13,19 +13,22 @@
             "name": "小販區",
             "for": "hawker",
             "btnClass": "red-btn",
-            "description": "1950年代小販讓貧苦大眾購買平價小食或貨品，能獲得(開心icon)最多300！"
+            "description": "1950年代小販讓貧苦大眾購買平價小食或貨品，能獲得(開心icon)最多300！",
+            "gameTemplate": "hawker"
           },
           {
             "name": "茶樓",
             "for": "restaurant",
             "btnClass": "red-btn",
-            "description": "在荼樓裡你可以品賞舊式茶點，獲得(開心icon)！"
+            "description": "在荼樓裡你可以品賞舊式茶點，獲得(開心icon)！",
+            "gameTemplate": "restaurant"
           },
           {
             "name": "粵劇院",
             "for": "opera",
             "btnClass": "red-btn",
-            "description": "在粵劇院裡你可以欣賞舊式粵劇，獲得(開心icon)最多1200！"
+            "description": "在粵劇院裡你可以欣賞舊式粵劇，獲得(開心icon)最多1200！",
+            "gameTemplate": "opera"
           },
           {
             "name": "理髮廳",

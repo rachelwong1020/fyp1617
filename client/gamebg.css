@@ -1,0 +1,25 @@
+.char-img > img{
+    width: 100%;
+}
+.gameDescription p{
+    font-size: 22px;
+    line-height: 100%;
+}
+@media only screen and (max-width: 1200px){
+    .gameDescription p{
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
+@media only screen and (max-width: 992px){
+    .gameDescription p{
+        font-size: 18px;
+        line-height: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .gameDescription p{
+        font-size: 16px;
+        line-height: 100%;
+    }
+}

@@ -1,17 +1,27 @@
 var imageRelationship = [
-    {upperNumber: 1, lowerString: 'one', beforeImg: 'central_LiYuenStEast_before.png', afterImg: 'central_LiYuenStEast_after.png'},
-    {upperNumber: 2, lowerString: 'two', beforeImg: 'ssp_PeiHoSt_before.png', afterImg: 'ssp_PeiHoSt_after.png'},
-    {upperNumber: 3, lowerString: 'three', beforeImg: 'ssp_YuChauSt_before.png', afterImg: 'ssp_YuChauSt_after.png'},
+    {upperNumber: 1, lowerString: 'one', beforeImg: 'central_LiYuenStEast_before.png', afterImg: 'central_LiYuenStEast_after.png', streetName: '這是中環利源東街。'},
+    {upperNumber: 2, lowerString: 'two', beforeImg: 'ssp_PeiHoSt_before.png', afterImg: 'ssp_PeiHoSt_after.png', streetName: '這是深水埗北河街。'},
+    {upperNumber: 3, lowerString: 'three', beforeImg: 'ssp_YuChauSt_before.png', afterImg: 'ssp_YuChauSt_after.png', streetName: '這是深水埗汝州街。'},
 ];
 
 var correctCards = 0;
 Template.hawker.onRendered(function () {
     init();
+    $('.modal').modal();
 });
 
 Template.hawker.helpers({
+    correctStreetName: function () {
+        return Session.get('Game1950HawkerCorrectStreetName');
+    },
     gameDone: function () {
         return Session.get('game1950HawkerDone');
+    }
+});
+
+Template.hawker.events({
+    'click #before_1950_leave': function () {
+        Session.set('MainGameCurrentGame', null);
     }
 });
 
@@ -61,7 +71,9 @@ function handleCardDrop( event, ui ) {
         ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
         ui.draggable.draggable( 'option', 'revert', false );
         correctCards++;
-        
+        Session.set('MainGameModalTitle', '正確！');
+        Session.set('MainGameModalContent', imageRelationship[cardNumber-1].streetName);
+        $('#main_game_modal').modal('open');
     }
 
     // If all the cards have been placed correctly then display a message

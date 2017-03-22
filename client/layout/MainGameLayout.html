@@ -1,6 +1,15 @@
 <template name="MainGameLayout">
-    <header>
-    </header>
+    <div id="main_game_modal" class="modal">
+        <div class="modal-content">
+            <div class="row center-align">
+                <h2>{{modalTitle}}</h2>
+                <h3>{{modalCotent}}</h3>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-green btn-flat">知道！</a>
+        </div>
+    </div>
     <main id="main_game_layout" class="pusher main-background-color">
         <div id="side_nav_bar" class="main-background-color">
             <ul class="collapsible" data-collapsible="accordion">
@@ -9,13 +18,13 @@
                         <div class="collapsible-header">
                             <button class="{{btnClass}}">{{name}}</button>
                         </div>
-                        <div class="collapsible-body"><span class="teal-text text-lighten-1">{{description}}</span></div>
+                        <div class="collapsible-body"><span class="teal-text text-lighten-1 game-description">{{description}}</span></div>
                     </li>
                 {{/each}}
             </ul>
         </div>
-        <div id="main_game_content" style="background-image: url(/resources/layout/map.svg);">
-
+        <div id="main_game_content" class="valign-wrapper" style="background-image: url(/resources/layout/map.svg);">
+            {{> Template.dynamic template=gameMain}}
         </div>
         <div id="status_bar">
             <div class="container fluid main-background-color">

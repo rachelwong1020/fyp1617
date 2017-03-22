@@ -91,3 +91,6 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
+#main_game_layout .game-description {
+    cursor: pointer;
+}
