@@ -1,5 +1,5 @@
 <template name="opera">
-    <div class="container fluid">
+    <div class="container">
         {{#if gameDone}}
             <div class="row center-align">
                 <div class="dialog-container container-purple large-text white-text">
@@ -10,9 +10,9 @@
         {{else}}
             <div class="row">
                 {{#each opera}}
-                    <div class="col s6">
-                        <div class="card horizontal">
-                            <div class="card-image">
+                    <div class="col m6 s12">
+                        <div class="card horizontal opera-card">
+                            <div class="card-image valign-wrapper">
                                 <img src="/resources/games/Game1950opera/img/{{coverImg}}">
                             </div>
                             <div class="card-stacked">
