@@ -1,0 +1,11 @@
+#restaurant_image {
+    width: 100%;
+    height: 300px;
+}
+.restaurant-card .card-content {
+    height: 176px;
+    overflow: scroll;
+}
+.restaurant-card .card-title {
+    font-size: 20px;
+}
