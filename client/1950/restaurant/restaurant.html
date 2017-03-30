@@ -1,5 +1,28 @@
 <template name="restaurant">
-    <div class="container">
-
-    </div>
+<div class="container">
+    {{#if gameDone}}
+        <div class="row center-align">
+            <div class="dialog-container container-purple large-text white-text">
+                <p>現今很多傳統茶樓都逐漸被淘汰了，要好好珍惜啊！</p>
+                <button id="before_1950_leave" class="btn-theme white">知道</button>
+            </div>
+        </div>
+    {{else}}
+        <div class="row">
+            {{#each opera}}
+                <div class="col s12 m7">
+                    <div class="card restaurant-card">
+                        <div class="card-image valign-wrapper">
+                            <img src="/resources/games/Game1950restaurant/img/{{coverImg}}">
+                            <span class="card-title">{{name}}</span>
+                        </div>
+                        <div class="card-action">
+                            <a class="restaurant-buy-food">點菜</a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    {{/if}}
+</div>
 </template>
