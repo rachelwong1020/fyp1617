@@ -1,21 +1,27 @@
 Template.MainGameLayout.onRendered(function () {
     $('.collapsible').collapsible();
+    if(!Session.get('MainGameKP')) {
+        Session.set('MainGameKP', 100);
+    }
+    if(!Session.get('MainGameMP')) {
+        Session.set('MainGameMP', 100);
+    }
+    if(!Session.get('MainGameHP')) {
+        Session.set('MainGameHP', 100);
+    }
 });
 Template.MainGameLayout.helpers({
     checkPoint: function () {
         return Session.get('MainGameCheckPoints');
     },
-    location: function () {
-        
+    hpPoint: function () {
+        return Session.get('MainGameHP');
     },
-    gameMain: function () {
-        return Session.get('MainGameCurrentGame');
+    kpPoint: function () {
+        return Session.get('MainGameKP');
     },
-    modalCotent: function () {
-        return Session.get('MainGameModalContent');
-    },
-    modalTitle: function () {
-        return Session.get('MainGameModalTitle');
+    mpPoint: function () {
+        return Session.get('MainGameMP');
     }
 });
 Template.MainGameLayout.events({
