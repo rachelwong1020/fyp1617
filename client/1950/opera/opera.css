@@ -9,3 +9,6 @@
 .opera-card .card-title {
     font-size: 20px;
 }
+.opera-card .card-action {
+    padding: 10px;
+}

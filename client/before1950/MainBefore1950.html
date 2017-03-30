@@ -3,7 +3,7 @@
         {{#if gameStarted}}
             {{#if gameDone}}
                 <div class="container fluid">
-                    <div class="row">
+                    <div class="row row-margin-0">
                         <div class="col s4">
                             <div class="char-img">
                                 <img src="/resources/badges/1950before1950.png">
@@ -12,15 +12,16 @@
                         <div class="col s8">
                             <p>恭喜你通過第一關考驗，獲得初心徽章！</p>
                             <p>接下來，你要收集不同徽章，成為經驗豐富的冒險家！</p>
-                            <button id="before_1950_leave" class="btn-theme white">開始冒險！</button>
                         </div>
+                    </div>
+                    <div class="row center-align">
+                        <button id="before_1950_leave" class="btn-theme white">開始冒險！</button>
                     </div>
                 </div>
             {{else}}
                 {{> Before1950Game}}
             {{/if}}
         {{else}}
-
             <div class="container fluid">
                 <div class="row">
                     <div class="col s4">
@@ -31,8 +32,10 @@
                     <div class="col s8">
                         <h4>開始冒險前，先了解香港開埠前的歷史吧！</h4>
                         <h4>以下會出現5條問題，測試你身為冒險家的知識！</h4>
-                        <button id="start_before_1950_game" class="btn-theme white">開始</button>
                     </div>
+                </div>
+                <div class="row center-align">
+                    <button id="start_before_1950_game" class="btn-theme white">開始</button>
                 </div>
             </div>
 

@@ -21,7 +21,11 @@
                                     <p>{{description}}</p>
                                 </div>
                                 <div class="card-action">
-                                    <a class="opera-play-video">我想觀看這片</a>
+                                    {{#if isVideoCompleted}}
+                                        <a class="green-text">Done</a>
+                                    {{else}}
+                                        <a class="opera-play-video">我想觀看這片</a>
+                                    {{/if}}
                                 </div>
                             </div>
                         </div>
@@ -33,7 +37,7 @@
             <div class="modal-content">
                 <h4>{{selectedName}}</h4>
                 <video id="opera_video" class="video-js vjs-default-skin vjs-big-play-centered" controls>
-                    <source src="/resources/games/Game1950opera/video/{{selectedVideo}}" type="video/mp4">
+                    <source type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>

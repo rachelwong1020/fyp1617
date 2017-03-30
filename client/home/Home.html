@@ -3,16 +3,20 @@
         <div class="container fluid">
             <div class="row">
                 {{#if isLogin}}
-                    <div class="col s4">
-                        <div class="char-img">
-                            <img src="/resources/character/mingming.png">
+                    <div class="row">
+                        <div class="col s4">
+                            <div class="char-img">
+                                <img src="/resources/character/mingming.png">
+                            </div>
+                        </div>
+                        <div class="col s8">
+                            <h4>你好！我是明明！</h4>
+                            <h4>想跟我一起回到過去冒險，體驗舊式香港的各種事嗎？</h4>
                         </div>
                     </div>
-                <div class="col s8">
-                    <h4>你好！我是明明！</h4>
-                    <h4>想跟我一起回到過去冒險，體驗舊式香港的各種事嗎？</h4>
-                    <button id="start_game" class="btn-theme white">下一頁</button>
-                </div>
+                    <div class="row center-align">
+                        <button id="start_game" class="btn-theme white">下一頁</button>
+                    </div>
                 {{else}}
                     {{> atForm}}
                 {{/if}}

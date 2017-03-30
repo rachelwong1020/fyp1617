@@ -27,7 +27,7 @@ body {
 }
 .dialog-container {
     width: 55% !important;
-    height: 55% !important;
+    height: 60% !important;
     border-radius: 20px;
     border-width: 9px;
     border-style: solid;
@@ -70,4 +70,7 @@ input.white-text:-moz-placeholder {
 }
 .large-text {
     font-size: 2rem !important;
+}
+.row.row-margin-0 {
+    margin: 0;
 }
