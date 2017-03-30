@@ -1,24 +1,41 @@
 <template name="MainBefore1950">
-    <div class="container center-align">
+    <div class="dialog-container container-purple large-text white-text">
         {{#if gameStarted}}
             {{#if gameDone}}
-                <div class="row">
-                    <div class="dialog-container container-purple large-text white-text">
-                        <p>恭喜你通過了第一關考驗，獲得初心徽章一枚！接下來，你會透過不同任務收集到徽章，成為經驗豐富的冒險家！</p>
-                        <button id="before_1950_leave" class="btn-theme white">正式開始冒險吧！</button>
+                <div class="container fluid">
+                    <div class="row">
+                        <div class="col s4">
+                            <div class="char-img">
+                                <img src="/resources/badges/1950before1950.png">
+                            </div>
+                        </div>
+                        <div class="col s8">
+                            <p>恭喜你通過第一關考驗，獲得初心徽章！</p>
+                            <p>接下來，你要收集不同徽章，成為經驗豐富的冒險家！</p>
+                            <button id="before_1950_leave" class="btn-theme white">開始冒險！</button>
+                        </div>
                     </div>
                 </div>
             {{else}}
                 {{> Before1950Game}}
             {{/if}}
         {{else}}
-            <div class="row">
-                <div class="dialog-container container-purple large-text white-text">
-                    <p>開始冒險之前，我們先去了解香港開埠前的歷史吧！</p>
-                    <p>以下會出現5條問題，測試一下你身為冒險家所需的知識！</p>
-                    <button id="start_before_1950_game" class="btn-theme white">開始</button>
+
+            <div class="container fluid">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="char-img">
+                            <img src="/resources/character/mingming.png">
+                        </div>
+                    </div>
+                    <div class="col s8">
+                        <h4>開始冒險前，先了解香港開埠前的歷史吧！</h4>
+                        <h4>以下會出現5條問題，測試你身為冒險家的知識！</h4>
+                        <button id="start_before_1950_game" class="btn-theme white">開始</button>
+                    </div>
                 </div>
             </div>
+
         {{/if}}
     </div>
 </template>

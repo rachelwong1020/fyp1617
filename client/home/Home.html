@@ -1,11 +1,18 @@
 <template name="Home">
-    <div class="container center-align">
-        <div class="row">
-            <div class="dialog-container container-purple large-text white-text">
+    <div class="dialog-container container-purple white-text">
+        <div class="container fluid">
+            <div class="row">
                 {{#if isLogin}}
-                    <p>你好！我是明明！</p>
-                    <p>想跟我一起回到過去的香港冒險，體驗一下舊式香港各種事嗎？</p>
-                    <button id="start_game" class="btn-theme white">開始</button>
+                    <div class="col s4">
+                        <div class="char-img">
+                            <img src="/resources/character/mingming.png">
+                        </div>
+                    </div>
+                <div class="col s8">
+                    <h4>你好！我是明明！</h4>
+                    <h4>想跟我一起回到過去冒險，體驗舊式香港的各種事嗎？</h4>
+                    <button id="start_game" class="btn-theme white">下一頁</button>
+                </div>
                 {{else}}
                     {{> atForm}}
                 {{/if}}
