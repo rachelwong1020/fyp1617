@@ -1,1 +1,1 @@
-Before1950QuestionsCollections = new Mongo.Collection('before1950Questions');
+QuestionsCollections = new Mongo.Collection('questions');

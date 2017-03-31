@@ -14,6 +14,9 @@ Template.MainGameLayout.helpers({
     checkPoint: function () {
         return Session.get('MainGameCheckPoints');
     },
+    gameMain: function () {
+        return Session.get('MainGameCurrentGame');
+    },
     hpPoint: function () {
         return Session.get('MainGameHP');
     },

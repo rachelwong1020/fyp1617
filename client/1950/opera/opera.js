@@ -15,6 +15,7 @@ Template.opera.onRendered(function () {
     video.ready(function () {
         var player = this;
         player.on('ended', function() {
+            MainGame.increaseHp(300);
             var completedArr = Session.get('game1950OperaCompletedContent');
             completedArr.push(Session.get('game1950OperaSelectedContent').name);
             Session.set('game1950OperaCompletedContent', completedArr);
