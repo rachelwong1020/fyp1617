@@ -1,6 +1,7 @@
 var usedQuestion = [];
 Template.Before1950Game.onCreated(function () {
     Session.set('Before1950GameQuestions', []);
+    Session.set('Before1950GameQuestionsCorrectAmount', 0);
     this.autorun(() => {
         this.subscribe('allQuestionsByDecade', 'before50s', {
             onReady: function () {
@@ -17,7 +18,6 @@ Template.Before1950Game.helpers({
         return 12/Session.get('Before1950GameCurrentQuestion').options.length;
     },
     question: function () {
-        console.log(Session.get('Before1950GameCurrentQuestion'));
         return Session.get('Before1950GameCurrentQuestion').question;
     },
     questionNumber: function () {
@@ -70,6 +70,9 @@ Template.Before1950Game.events({
                 if(question.options[i] == this) {
                     question.response = i;
                     Session.set('Before1950GameCurrentQuestion', question);
+                    if(question.response == question.answer) {
+                        Session.set('Before1950GameQuestionsCorrectAmount', Session.get('Before1950GameQuestionsCorrectAmount')+1);
+                    }
                 }
             }
         }
