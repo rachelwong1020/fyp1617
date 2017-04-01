@@ -21,6 +21,17 @@
     background-color: #79CFF7;
     border-color: #CFE6FA;
 }
+.grey-btn, .grey-btn:focus {
+    background-color: #757575;
+    -moz-box-shadow:    inset 0 0 7px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 7px #6b6b6b;
+    box-shadow:         inset 0 0 7px #6b6b6b;
+    border-color: #9e9e9e;
+}
+.grey-btn:hover {
+    background-color: #bdbdbd;
+    border-color: #e0e0e0;
+}
 .red-btn, .red-btn:focus {
     background-color: #F07575;
     -moz-box-shadow:    inset 0 0 7px #6b6b6b;

@@ -7,7 +7,8 @@
             "name": "學校",
             "for": "school",
             "btnClass": "blue-btn",
-            "description": "在學校學習才能獲取冒險家知識，能獲得(智慧icon)最多300！"
+            "description": "在學校學習才能獲取冒險家知識，能獲得(智慧icon)最多300！",
+            "gameTemplate": "Game1950SchoolQuestions"
           },
           {
             "name": "小販區",

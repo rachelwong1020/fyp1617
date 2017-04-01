@@ -17,14 +17,19 @@ Template.opera.onRendered(function () {
         player.on('ended', function() {
             MainGame.increaseHp(300);
             var completedArr = Session.get('game1950OperaCompletedContent');
-            completedArr.push(Session.get('game1950OperaSelectedContent').name);
-            Session.set('game1950OperaCompletedContent', completedArr);
+            if(completedArr.indexOf(Session.get('game1950OperaSelectedContent').name) < 0) {
+                completedArr.push(Session.get('game1950OperaSelectedContent').name);
+                Session.set('game1950OperaCompletedContent', completedArr);
+                Session.set('Game1950OperaVideoPlayCompleted', true);
+            }
         });
     });
     $('.modal').modal({
         ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
             video.src('/resources/games/Game1950opera/video/'+Session.get('game1950OperaSelectedContent').video);
             video.play();
+            Session.set('Game1950OperaVideoPlayCompleted', false);
+            MainGame.increaseMp(-200);
         },
         complete: function() {
             video.pause();
@@ -34,13 +39,25 @@ Template.opera.onRendered(function () {
 
 Template.opera.helpers({
     gameDone: function () {
-        return Session.get('game1950operaDone');
+        return Session.get('game1950OperaCompletedContent').length == operas.length;
+    },
+    gameStarted: function () {
+        return Session.get('game1950operaStarted');
+    },
+    hasEnoughMoney: function () {
+        return Session.get('MainGameMP') >= 200;
     },
     isVideoCompleted: function () {
         return Session.get('game1950OperaCompletedContent').indexOf(this.name) >= 0;
     },
+    isVideoPlayCompleted: function () {
+        return Session.get('Game1950OperaVideoPlayCompleted');
+    },
     opera: function () {
         return operas;
+    },
+    pageOne: function () {
+        return !Session.get('game1950operaStartedPageOne');
     },
     selectedName: function () {
         return Session.get('game1950OperaSelectedContent').name;
@@ -51,11 +68,25 @@ Template.opera.helpers({
 });
 
 Template.opera.events({
+    'click #1950_opera_leave': function () {
+        var completed = Session.get('MainGameCompletedCheckPoint');
+        if(completed.indexOf(Session.get('MainGameCurrentGame')) < 0) {
+            completed.push(Session.get('MainGameCurrentGame'));
+            Session.set('MainGameCompletedCheckPoint', completed);
+        }
+        Session.set('MainGameCurrentGame', null);
+    },
     'click .opera-play-video': function () {
         Session.set('game1950OperaSelectedContent', this);
         $('#modal1').modal('open');
         var modal = document.getElementsByClassName("modal-overlay")[0];
         $('.modal-overlay').remove();
         $('#main_game_content .container').append(modal);
+    },
+    'click #start_1950_opera_game': function () {
+        Session.set('game1950operaStarted', true);
+    },
+    'click #start_1950_opera_next': function () {
+        Session.set('game1950operaStartedPageOne', true);
     }
 });

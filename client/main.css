@@ -27,13 +27,15 @@ body {
 }
 .dialog-container {
     width: 55% !important;
-    height: 60% !important;
     border-radius: 20px;
     border-width: 9px;
     border-style: solid;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
+}
+.dialog-container.wide {
+    width: 85% !important;
 }
 .full-height {
     height: 100vh;

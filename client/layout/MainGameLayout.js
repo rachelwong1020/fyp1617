@@ -1,4 +1,5 @@
 Template.MainGameLayout.onRendered(function () {
+    Session.set('MainGameCompletedCheckPoint', []);
     $('.collapsible').collapsible();
     if(!Session.get('MainGameKP')) {
         Session.set('MainGameKP', 100);
@@ -14,11 +15,17 @@ Template.MainGameLayout.helpers({
     checkPoint: function () {
         return Session.get('MainGameCheckPoints');
     },
+    checkPointComplete: function () {
+        return Session.get('MainGameCompletedCheckPoint').indexOf(this.gameTemplate) >= 0;
+    },
     gameMain: function () {
         return Session.get('MainGameCurrentGame');
     },
     hpPoint: function () {
         return Session.get('MainGameHP');
+    },
+    isAllMiniGameComplete: function () {
+        return Session.get('MainGameCompletedCheckPoint').length == Session.get('MainGameCheckPoints').length;
     },
     kpPoint: function () {
         return Session.get('MainGameKP');

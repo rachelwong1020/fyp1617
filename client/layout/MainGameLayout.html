@@ -5,7 +5,7 @@
                 {{#each checkPoint}}
                     <li>
                         <div class="collapsible-header">
-                            <button class="{{btnClass}}">{{name}}</button>
+                            <button class="{{#if checkPointComplete}}grey-btn{{else}}{{btnClass}}{{/if}}">{{name}}</button>
                         </div>
                         <div class="collapsible-body"><span class="teal-text text-lighten-1 game-description">{{description}}</span></div>
                     </li>
