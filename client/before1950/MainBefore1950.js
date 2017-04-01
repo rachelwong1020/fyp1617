@@ -1,9 +1,15 @@
 Template.MainBefore1950.helpers({
+    correctAnswerAmount: function () {
+        return Session.get('QuestionsCorrectAmount');
+    },
     gameDone: function () {
-        return Session.get('gameBefore1950Done');
+        return Session.get('QuestionsGameDone');
     },
     gameStarted: function () {
         return Session.get('gameBefore1950Started');
+    },
+    isPassGame: function () {
+        return Session.get('QuestionsCorrectAmount') >= 4;
     }
 });
 Template.MainBefore1950.events({

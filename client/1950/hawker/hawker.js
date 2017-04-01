@@ -21,6 +21,11 @@ Template.hawker.helpers({
 
 Template.hawker.events({
     'click #before_1950_leave': function () {
+        var completed = Session.get('MainGameCompletedCheckPoint');
+        if(completed.indexOf(Session.get('MainGameCurrentGame')) < 0) {
+            completed.push(Session.get('MainGameCurrentGame'));
+            Session.set('MainGameCompletedCheckPoint', completed);
+        }
         Session.set('MainGameCurrentGame', null);
     }
 });

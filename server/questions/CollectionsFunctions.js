@@ -1,7 +1,11 @@
-var Before1950QuestionsCollections = new Mongo.Collection('before1950Questions');
+var QuestionsCollections = new Mongo.Collection('questions');
 
-Meteor.publish('allBefore1950Questions', function () {
-    return Before1950QuestionsCollections.find();
+Meteor.publish('allQuestions', function () {
+    return QuestionsCollections.find();
+});
+
+Meteor.publish('allQuestionsByDecade', function (decade) {
+    return QuestionsCollections.find({decade: decade});
 });
 
 Meteor.methods({
@@ -12,27 +16,27 @@ Meteor.methods({
          */
         switch (profile.type) {
             case 'mc':
-                Before1950QuestionsCollections.update(
+                QuestionsCollections.update(
                     {_id: profile.questionId},
                     {$inc:{["response."+profile.response]: 1}}
                 );
                 break;
             case 'tf':
                 if(profile.response == true) {
-                    Before1950QuestionsCollections.update(
+                    QuestionsCollections.update(
                         {_id: profile.questionId},
                         {$inc:{"response.true": 1}}
                     );
                 }
                 if(profile.response == false) {
-                    Before1950QuestionsCollections.update(
+                    QuestionsCollections.update(
                         {_id: profile.questionId},
                         {$inc:{"response.false": 1}}
                     );
                 }
                 break;
             case 'open':
-                Before1950QuestionsCollections.update(
+                QuestionsCollections.update(
                     {_id: profile.questionId},
                     {$push:{response: profile.response}}
                 );
@@ -51,7 +55,7 @@ Meteor.methods({
     before1950UploadQuestions: function (profile) {
         var successCount = 0;
         for(var i = 0; i < profile.length; i++) {
-            var raw = Before1950QuestionsCollections.update(
+            var raw = QuestionsCollections.update(
                 {questionNumber: profile[i].questionNumber},
                 {$set: {
                     decade: profile[i].decade,

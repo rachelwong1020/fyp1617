@@ -1,6 +1,6 @@
 Template.Before1950Admin.onCreated(function () {
     this.autorun(() => {
-        this.subscribe('allBefore1950Questions');
+        this.subscribe('allQuestions');
     })
 });
 Template.Before1950Admin.helpers({
@@ -14,7 +14,7 @@ Template.Before1950Admin.helpers({
         return Math.random()*100+'%';
     },
     questions: function () {
-        return Before1950QuestionsCollections.find({}, {sort: {questionNumber: 1}});
+        return QuestionsCollections.find({}, {sort: {questionNumber: 1}});
     }
 });
 Template.Before1950Admin.events({

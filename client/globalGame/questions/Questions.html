@@ -1,0 +1,50 @@
+<template name="Questions">
+    <div class="row">
+        <div id="game_questions" class="container fluid large-text white-text">
+            <h3>第{{questionNumber}}條</h3>
+            <div class="row center-align">
+                <h4>{{question}}</h4>
+            </div>
+            <div class="row center-align">
+                {{#if isMc}}
+                    {{#each option}}
+                        <div class="col s{{optionColNum}}">
+                            <div class="{{#if showMcCorrectColor}}correct{{/if}}{{#if showMcIncorrectColor}}incorrect{{/if}} card option hoverable">
+                                <div class="card-content white-text">
+                                    <span class="card-title">{{this}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                {{/if}}
+                {{#if isTrueFalse}}
+                    <div class="col s6">
+                        <div class="{{#if showTfTrueCorrectColor}}correct{{/if}}{{#if showTfTrueIncorrectColor}}incorrect{{/if}} card optionTrue hoverable">
+                            <div class="card-content white-text">
+                                <span class="card-title">正確</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="{{#if showTfFalseCorrectColor}}correct{{/if}}{{#if showTfFalseIncorrectColor}}incorrect{{/if}} card optionFalse hoverable">
+                            <div class="card-content white-text">
+                                <span class="card-title">錯誤</span>
+                            </div>
+                        </div>
+                    </div>
+                {{/if}}
+                {{#if isOpen}}
+                {{/if}}
+            </div>
+            {{#if questionAnswered}}
+                <div class="row center-align">
+                    {{#if questionsCompleted}}
+                        <button id="question_game_done" class="btn-theme white">完成</button>
+                    {{else}}
+                        <button id="question_game_next" class="btn-theme white">下一條</button>
+                    {{/if}}
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</template>

@@ -1,0 +1,18 @@
+#game_questions .card {
+    background-color: rgba(60,60,60,0.5);
+}
+#game_questions .card.correct {
+    background-color: rgba(27,84,32,0.7);
+}
+#game_questions .card.incorrect {
+    background-color: rgba(183,28,28,0.7);
+}
+#game_questions .card {
+    cursor: pointer;
+}
+#game_questions .card.option .card-title {
+    margin: 0;
+}
+#game_questions h3 {
+    margin: 0 !important;
+}

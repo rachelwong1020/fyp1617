@@ -1,21 +1,37 @@
 Template.MainGameLayout.onRendered(function () {
+    Session.set('MainGameCompletedCheckPoint', []);
     $('.collapsible').collapsible();
+    if(!Session.get('MainGameKP')) {
+        Session.set('MainGameKP', 100);
+    }
+    if(!Session.get('MainGameMP')) {
+        Session.set('MainGameMP', 100);
+    }
+    if(!Session.get('MainGameHP')) {
+        Session.set('MainGameHP', 100);
+    }
 });
 Template.MainGameLayout.helpers({
     checkPoint: function () {
         return Session.get('MainGameCheckPoints');
     },
-    location: function () {
-        
+    checkPointComplete: function () {
+        return Session.get('MainGameCompletedCheckPoint').indexOf(this.gameTemplate) >= 0;
     },
     gameMain: function () {
         return Session.get('MainGameCurrentGame');
     },
-    modalCotent: function () {
-        return Session.get('MainGameModalContent');
+    hpPoint: function () {
+        return Session.get('MainGameHP');
     },
-    modalTitle: function () {
-        return Session.get('MainGameModalTitle');
+    isAllMiniGameComplete: function () {
+        return Session.get('MainGameCompletedCheckPoint').length == Session.get('MainGameCheckPoints').length;
+    },
+    kpPoint: function () {
+        return Session.get('MainGameKP');
+    },
+    mpPoint: function () {
+        return Session.get('MainGameMP');
     }
 });
 Template.MainGameLayout.events({

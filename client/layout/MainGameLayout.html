@@ -5,7 +5,7 @@
                 {{#each checkPoint}}
                     <li>
                         <div class="collapsible-header">
-                            <button class="{{btnClass}}">{{name}}</button>
+                            <button class="{{#if checkPointComplete}}grey-btn{{else}}{{btnClass}}{{/if}}">{{name}}</button>
                         </div>
                         <div class="collapsible-body"><span class="teal-text text-lighten-1 game-description">{{description}}</span></div>
                     </li>
@@ -21,34 +21,27 @@
                     <div class="col m2 s12 center-align">
                         <img src="/resources/character/mainBoy.png" class="user-icon">
                     </div>
-                    <div class="col m5 s12">
+                    <div class="col m10 s12">
                         <div class="row">
-                            <div class="col m6 s12">
+                            <div class="col m4 s12">
                                 <img src="/resources/layout/iconKP.png" class="score-icon">
-                                <div class="score-container white-text blue-score"></div>
+                                <div class="score-container white-text blue-score">{{kpPoint}}</div>
                             </div>
-                            <div class="col m6 s12">
+                            <div class="col m4 s12">
                                 <img src="/resources/layout/iconMoney.png" class="score-icon" style="margin-left: 1.5em;">
-                                <div class="score-container white-text yellow-score"></div>
+                                <div class="score-container white-text yellow-score">{{mpPoint}}</div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col m5 s12">
-                        <div class="row">
-                            <div class="col m6 s12">
+                            <div class="col m4 s12">
                                 <img src="/resources/layout/iconHP.png" class="score-icon">
-                                <div class="score-container white-text red-score"></div>
-                            </div>
-                            <div class="col m6 s12">
-                                <img src="/resources/layout/iconAP.png" class="score-icon">
-                                <div class="score-container white-text green-score"></div>
+                                <div class="score-container white-text red-score">{{hpPoint}}</div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col s6">
-                                <div id="game_background" class="status-btn">遊戲指示</div>
+                            <div class="col s4"></div>
+                            <div class="col s4">
+                                <div id="game_background" class="status-btn">遊戲背景</div>
                             </div>
-                            <div class="col s6">
+                            <div class="col s4">
                                 <div id="game_badge" class="status-btn">徽章</div>
                             </div>
                         </div>

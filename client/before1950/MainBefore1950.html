@@ -4,15 +4,22 @@
             {{#if gameDone}}
                 <div class="container fluid">
                     <div class="row row-margin-0">
-                        <div class="col s4">
-                            <div class="char-img">
-                                <img src="/resources/badges/1950before1950.png">
+                        {{#if isPassGame}}
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/badges/1950before1950.png">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col s8">
-                            <p>恭喜你通過第一關考驗，獲得初心徽章！</p>
-                            <p>接下來，你要收集不同徽章，成為經驗豐富的冒險家！</p>
-                        </div>
+                            <div class="col s8">
+                                <p>恭喜你答對{{correctAnswerAmount}}題，獲得初心徽章！</p>
+                                <p>接下來，你會透過不同任務收集到徽章，成為經驗豐富的冒險家！</p>
+                            </div>
+                        {{else}}
+                            <div class="col s12 center-align">
+                                <p>恭喜你答對{{correctAnswerAmount}}題，通過了第一關考驗！</p>
+                                <p>接下來，你會透過不同任務收集到徽章，成為經驗豐富的冒險家！</p>
+                            </div>
+                        {{/if}}
                     </div>
                     <div class="row center-align">
                         <button id="before_1950_leave" class="btn-theme white">開始冒險！</button>
@@ -38,7 +45,6 @@
                     <button id="start_before_1950_game" class="btn-theme white">開始</button>
                 </div>
             </div>
-
         {{/if}}
     </div>
 </template>
