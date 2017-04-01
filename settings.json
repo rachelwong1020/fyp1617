@@ -7,27 +7,27 @@
             "name": "學校",
             "for": "school",
             "btnClass": "blue-btn",
-            "description": "在學校學習才能獲取冒險家知識，能獲得(智慧icon)最多300！"
+            "description": "在學校學習才能獲取冒險家知識，能獲得智慧指數最多300！"
           },
           {
             "name": "小販區",
             "for": "hawker",
             "btnClass": "red-btn",
-            "description": "1950年代小販讓貧苦大眾購買平價小食或貨品，能獲得(開心icon)最多300！",
+            "description": "在這裡你要通過冒險家考驗，才能獲得智慧指數最多300！",
             "gameTemplate": "hawker"
           },
           {
             "name": "茶樓",
             "for": "restaurant",
             "btnClass": "red-btn",
-            "description": "在荼樓裡你可以品賞舊式茶點，獲得(開心icon)！",
+            "description": "在荼樓裡你可以品賞舊式點心，獲得開心指數最多1000！(點菜需要金錢喔！)",
             "gameTemplate": "restaurant"
           },
           {
             "name": "粵劇院",
             "for": "opera",
             "btnClass": "red-btn",
-            "description": "在粵劇院裡你可以欣賞舊式粵劇，獲得(開心icon)最多1200！",
+            "description": "在粵劇院裡你可以欣賞舊式粵劇，獲得開心指數最多1200及智慧指數最多800！(每觀看一套劇需$200)",
             "gameTemplate": "opera"
           },
           {

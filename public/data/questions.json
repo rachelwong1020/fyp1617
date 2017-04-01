@@ -508,12 +508,6 @@
 {
 	"questionNumber": 43,
 	"decade": "60s",
-	"type": "open",
-	"question": "舉出三條以總督命名的街道名稱。"
-},
-{
-	"questionNumber": 44,
-	"decade": "60s",
 	"type": "mc",
 	"question": "景賢里位於哪裡？",
 	"options": [
@@ -524,7 +518,7 @@
 	"answer": 2
 },
 {
-	"questionNumber": 45,
+	"questionNumber": 44,
 	"decade": "60s",
 	"type": "mc",
 	"question": "青山禪院是在哪個古蹟的遺址上修建的？",
@@ -536,14 +530,14 @@
 	"answer": 1
 },
 {
-	"questionNumber": 46,
+	"questionNumber": 45,
 	"decade": "70s",
 	"type": "tf",
 	"question": "徙置大廈是政府為安置災民而興建的房屋，單位沒有獨立洗手間。",
 	"answer": true
 },
 {
-	"questionNumber": 47,
+	"questionNumber": 46,
 	"decade": "70s",
 	"type": "mc",
 	"question": "以下哪些行業不是在香港60至70年代蓬勃發展？",
@@ -556,67 +550,62 @@
 	"answer": 0
 },
 {
-	"questionNumber": 48,
-	"decade": "70s",
-	"type": "open",
-	"question": "60至70年代，香港工業發展蓬勃，主要有甚麼工業？"
-},
-{
-	"questionNumber": 49,
+	"questionNumber": 47,
 	"decade": "70s",
 	"type": "tf",
 	"question": "60至70年代在香港興盛的行業是電子業。",
 	"answer": true
 },
 {
-	"questionNumber": 50,
+	"questionNumber": 48,
 	"decade": "70s",
 	"type": "tf",
 	"question": "60至70年代在香港興盛的行業是製衣業。",
 	"answer": true
 },
 {
-	"questionNumber": 51,
+	"questionNumber": 49,
 	"decade": "70s",
 	"type": "tf",
 	"question": "60至70年代在香港興盛的行業是塑膠業。",
 	"answer": true
 },
 {
-	"questionNumber": 52,
+	"questionNumber": 50,
 	"decade": "70s",
 	"type": "tf",
 	"question": "60至70年代製造業發展蓬勃。",
 	"answer": true
 },
 {
-	"questionNumber": 53,
+	"questionNumber": 51,
 	"decade": "70s",
 	"type": "tf",
 	"question": "60至70年代以農業及漁業為主。",
 	"answer": false
 },
 {
-	"questionNumber": 54,
+	"questionNumber": 52,
 	"decade": "70s",
-	"type": "open",
-	"question": "香港的對外貿易主要有哪些類型？"
+	"type": "mc",
+	"question": "以下哪一項不是香港對外貿易的主要類型？",
+	"options": [
+		"進口",
+		"出口",
+		"入口",
+		"轉口"
+	],
+	"answer": 2
 },
 {
-	"questionNumber": 55,
-	"decade": "70s",
-	"type": "open",
-	"question": "哪兩種類型的對外貿易能為香港帶來收入？"
-},
-{
-	"questionNumber": 56,
+	"questionNumber": 53,
 	"decade": "70s",
 	"type": "tf",
 	"question": "居者有其屋是政府為安置災民而興建的房屋，單位沒有獨立洗手間。",
 	"answer": false
 },
 {
-	"questionNumber": 57,
+	"questionNumber": 54,
 	"decade": "80s",
 	"type": "mc",
 	"question": "以下哪項是香港有利營商的原因？",
@@ -629,7 +618,7 @@
 	"answer": 1
 },
 {
-	"questionNumber": 58,
+	"questionNumber": 55,
 	"decade": "80s",
 	"type": "mc",
 	"question": "以下哪項是香港發展成為轉口港的原因？",
@@ -642,7 +631,7 @@
 	"answer": 2
 },
 {
-	"questionNumber": 59,
+	"questionNumber": 56,
 	"decade": "80s",
 	"type": "mc",
 	"question": "以下哪些不是香港的出口貨品？",
@@ -655,7 +644,7 @@
 	"answer": 2
 },
 {
-	"questionNumber": 60,
+	"questionNumber": 57,
 	"decade": "80s",
 	"type": "mc",
 	"question": "以下哪些不是對外貿易為香港帶來的好處？",
@@ -668,7 +657,7 @@
 	"answer": 3
 },
 {
-	"questionNumber": 61,
+	"questionNumber": 58,
 	"decade": "80s",
 	"type": "mc",
 	"question": "以下哪些不是過去香港曾發展的工業項目？",
@@ -681,7 +670,7 @@
 	"answer": 1
 },
 {
-	"questionNumber": 62,
+	"questionNumber": 59,
 	"decade": "80s",
 	"type": "mc",
 	"question": "以下哪項不是香港製造業在80年代面對的問題？",
@@ -694,7 +683,7 @@
 	"answer": 3
 },
 {
-	"questionNumber": 63,
+	"questionNumber": 60,
 	"decade": "80s",
 	"type": "mc",
 	"question": "以下哪種行業是金融業？",
@@ -707,35 +696,35 @@
 	"answer": 3
 },
 {
-	"questionNumber": 64,
+	"questionNumber": 61,
 	"decade": "80s",
 	"type": "tf",
 	"question": "80年代中期以後，在香港興盛的行業是金融業。",
 	"answer": true
 },
 {
-	"questionNumber": 65,
+	"questionNumber": 62,
 	"decade": "80s",
 	"type": "tf",
 	"question": "80年代中期以後，在香港興盛的行業是服務業。",
 	"answer": true
 },
 {
-	"questionNumber": 66,
+	"questionNumber": 63,
 	"decade": "80s",
 	"type": "tf",
 	"question": "80年代中期以後，在香港興盛的行業是酒店業。",
 	"answer": true
 },
 {
-	"questionNumber": 67,
+	"questionNumber": 64,
 	"decade": "80s",
 	"type": "tf",
 	"question": "80年代中期以後旅遊業逐漸衰落。",
 	"answer": false
 },
 {
-	"questionNumber": 68,
+	"questionNumber": 65,
 	"decade": "80s",
 	"type": "tf",
 	"question": "80年代中期以後由製造業轉向發展服務業，並重新發展轉口貿易",
