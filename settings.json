@@ -7,47 +7,47 @@
             "name": "學校",
             "for": "school",
             "btnClass": "blue-btn",
-            "description": "在學校學習才能獲取冒險家知識，能獲得(智慧icon)最多300！",
+            "description": "在學校學習才能獲取冒險家知識，能獲得智慧指數最多300！",
             "gameTemplate": "Game1950SchoolQuestions"
           },
           {
             "name": "小販區",
             "for": "hawker",
             "btnClass": "red-btn",
-            "description": "1950年代小販讓貧苦大眾購買平價小食或貨品，能獲得(開心icon)最多300！",
+            "description": "在這裡你要通過冒險家考驗，才能獲得智慧指數最多300！",
             "gameTemplate": "hawker"
           },
           {
             "name": "茶樓",
             "for": "restaurant",
             "btnClass": "red-btn",
-            "description": "在荼樓裡你可以品賞舊式茶點，獲得(開心icon)！",
+            "description": "在荼樓裡你可以品賞舊式點心，獲得開心指數最多1000！",
             "gameTemplate": "restaurant"
           },
           {
             "name": "粵劇院",
             "for": "opera",
             "btnClass": "red-btn",
-            "description": "在粵劇院裡你可以欣賞舊式粵劇，獲得(開心icon)最多1200！",
+            "description": "你可以欣賞舊式粵劇，獲得開心指數最多1200！",
             "gameTemplate": "opera"
           },
           {
             "name": "理髮廳",
             "for": "salon",
             "btnClass": "yellow-btn",
-            "description": "舊式理髮廳提供的服務比現今髮型屋廣泛，嘗試在這裡體驗一下，賺取金錢吧！"
+            "description": "在理髮廳體驗為顧客服務，賺取金錢！"
           },
           {
             "name": "碼頭",
             "for": "pier",
             "btnClass": "yellow-btn",
-            "description": "以前很多香港人靠勞力維生，搬運貨物，你想體驗一下，賺取金錢嗎？"
+            "description": "在碼頭做一天苦力搬運貨物，靠勞力賺取金錢！"
           },
           {
             "name": "時裝店",
             "for": "boutique",
             "btnClass": "yellow-btn",
-            "description": "以前香港人喜愛找裁縫度身訂造衣服，你可以親身體驗一下，賺取金錢吧！"
+            "description": "在時裝店做裁縫賺取金錢，需要智慧指數達800才能體驗！"
           }
         ]
       }

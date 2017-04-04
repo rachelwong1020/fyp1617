@@ -1,10 +1,10 @@
 var food = [
-    {name: '鵪鶉蛋燒賣皇', description: '原粒鵪鶉蛋呈溏心狀態，一咬蛋汁四溢，教人一試難忘。', price: 200, coverImg: 'siumai.jpg'},
-    {name: '蝦醬腩仔蒸飯', description: '呢個餸係要蒸帶肥腩肉先至好食， 最好係肥腩隔住嘅五花腩， 蒸出嚟特別爽滑架!', price: 300, coverImg: 'rice.jpg'},
-    {name: '香滑鮮蝦腸粉', description: '腸粉晶瑩剔透，粉皮能整張夾起不斷裂', price: 100, coverImg: 'cheungfun.jpg'},
-    {name: '古法千層糕', description: '香香甜甜絕對是小朋友至愛', price: 100, coverImg: 'go.jpg'},
-    {name: '豉汁鳳爪', description: '豉汁鳳爪這點心是必指定要食的點心之一。雖然功夫較多，但味道真的很好。', price: 200, coverImg: 'chickleg.jpg'},
-    {name: '荷葉珍珠雞', description: '軟Ｑ的糯米飯中包裹著豐富的餡料。蒸過之後荷葉的清香完全融入米飯及材料中。', price: 100, coverImg: 'pearlchick.jpg'}
+    {name: '鵪鶉蛋燒賣皇', description: '原粒鵪鶉蛋呈溏心狀態，一咬蛋汁四溢，教人一試難忘！', price: 200, coverImg: 'siumai.jpg'},
+    {name: '蝦醬腩仔蒸飯', description: '這飯用上肥腩隔住的五花腩， 蒸出來特別爽滑！', price: 300, coverImg: 'rice.jpg'},
+    {name: '香滑鮮蝦腸粉', description: '腸粉晶瑩剔透，粉皮能整張夾起不斷裂！', price: 100, coverImg: 'cheungfun.jpg'},
+    {name: '古法千層糕', description: '香香甜甜絕對是小朋友至愛啊！', price: 100, coverImg: 'go.jpg'},
+    {name: '豉汁鳳爪', description: '豉汁鳳爪是必要吃的點心之一，雖然功夫較多但味道很好！', price: 200, coverImg: 'chickleg.jpg'},
+    {name: '荷葉珍珠雞', description: '軟軟的糯米飯包裹著豐富的餡料，蒸過後荷葉清香完全融入材料中！', price: 100, coverImg: 'pearlchick.jpg'}
 ];
 var currentTime;
 Template.restaurant.onCreated(function () {
