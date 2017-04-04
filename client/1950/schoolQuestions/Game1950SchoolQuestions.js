@@ -2,10 +2,9 @@
  * Created by Ansonmouse on 1/4/2017.
  */
 Template.Game1950SchoolQuestions.onCreated(function () {
-    if(!Session.get('Game1950SchoolQuestionStarted')) {
-        Session.set('QuestionCurrentDecade', '50s');
-        Session.set('QuestionsGameDone', false);
-    }
+    Session.set('Game1950SchoolQuestionStarted', false);
+    Session.set('QuestionCurrentDecade', '50s');
+    Session.set('QuestionsGameDone', false);
 });
 
 Template.Game1950SchoolQuestions.helpers({
