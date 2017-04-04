@@ -14,8 +14,14 @@ Template.hawker.helpers({
     correctStreetName: function () {
         return Session.get('Game1950HawkerCorrectStreetName');
     },
+    gameStarted: function () {
+        return Session.get('game1950HawkerStarted');
+    },
     gameDone: function () {
         return Session.get('game1950HawkerDone');
+    },
+    pageOne: function () {
+        return !Session.get('game1950HawkerStartedPageOne');
     }
 });
 
@@ -27,6 +33,12 @@ Template.hawker.events({
             Session.set('MainGameCompletedCheckPoint', completed);
         }
         Session.set('MainGameCurrentGame', null);
+    },
+    'click #start_1950_hawker_game': function () {
+        Session.set('game1950HawkerStarted', true);
+    },
+    'click #start_1950_hawker_next': function () {
+        Session.set('game1950HawkerStartedPageOne', true);
     }
 });
 

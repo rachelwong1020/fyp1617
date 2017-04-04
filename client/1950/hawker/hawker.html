@@ -1,21 +1,61 @@
 <template name="hawker">
     <div class="container">
-        {{#if gameDone}}
-            <div class="row center-align">
-                <div class="dialog-container container-purple large-text white-text">
-                    <p>小販為貧苦大眾帶來生活趣味，但想一想，若沒有小販管理，後果會怎樣?</p>
-                    <button id="before_1950_leave" class="btn-theme white">想完了！</button>
+        {{#if gameStarted}}
+            {{#if gameDone}}
+                <div class="row center-align">
+                    <div class="dialog-container container-purple large-text white-text">
+                        <p>小販為貧苦大眾帶來生活趣味，但想一想，若沒有小販管理，後果會怎樣?</p>
+                        <button id="before_1950_leave" class="btn-theme white">想完了！</button>
+                    </div>
                 </div>
-            </div>
+            {{else}}
+                <div id="hawker_content" class="container fluid">
+                    <div class="row center-align">
+                        <div id="cardPile" class="z-depth-4"> </div>
+                    </div>
+                    <div class="row center-align">
+                        <div id="cardSlots" class="z-depth-4"> </div>
+                    </div>
+                </div>
+            {{/if}}
         {{else}}
-            <div id="hawker_content" class="container fluid">
-                <div class="row center-align">
-                    <div id="cardPile" class="z-depth-4"> </div>
+            {{#if pageOne}}
+                <div class="dialog-container wide container-purple large-text white-text">
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/character/mingming.png">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <h4>小販讓貧苦大眾購買平價小食或貨品，他們於路邊將貨物售賣，或用手推車流動叫賣，有時會阻礙街道，於是政府立法規管。</h4>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button id="start_1950_hawker_next" class="btn-theme white">下一頁</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="row center-align">
-                    <div id="cardSlots" class="z-depth-4"> </div>
+            {{else}}
+                <div class="dialog-container wide container-purple large-text white-text">
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/character/mingming.png">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <h4>你能看得出街道在小販管理前後的分別嗎？把上下列同一條街道配對吧！</h4>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button id="start_1950_hawker_game" class="btn-theme white">知道了</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            {{/if}}
         {{/if}}
     </div>
 </template>

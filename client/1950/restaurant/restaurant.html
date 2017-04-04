@@ -3,7 +3,7 @@
     {{#if gameDone}}
         <div class="row center-align">
             <div class="dialog-container container-purple large-text white-text">
-                <p>現今很多傳統茶樓都逐漸被淘汰了，要好好珍惜啊！</p>
+                <p>謝謝惠顧！承惠${{totalPrice}}，獲得開心指數{{totalPrice}}。現今很多傳統茶樓都逐漸被淘汰了，要好好珍惜啊！</p>
                 <button id="before_1950_leave" class="btn-theme white">知道</button>
             </div>
         </div>
@@ -12,7 +12,7 @@
             <div class="col m9 s12">
                 <div class="card food-card-master">
                     <div class="card-content">
-                        <span class="card-title food-card-master-card-title">清純正氣<span class="right">檯號: __________ 經手人: __________</span></span>
+                        <span class="card-title food-card-master-card-title">鳳城大酒家<span class="right">檯號: __________ 經手人: __________</span></span>
                         <div class="row">
                             {{#each food}}
                                 <div class="col m6 s12">
@@ -43,7 +43,7 @@
                     <div class="card-content">
                         <div class="row center-align">
                             <h4>點菜單</h4>
-                            <h5>清純正氣</h5>
+                            <h5>鳳城大酒家</h5>
                         </div>
                         單號: {{invoiceNum}}<br>
                         日期: {{invoiceTime}}<br>
@@ -52,7 +52,7 @@
                                 終端: P510
                             </div>
                             <div class="col s6">
-                                服務員: RW
+                                服務員: 明明
                             </div>
                             <div class="col s6">
                                 桌號: {{tableNum}}
@@ -70,7 +70,7 @@
                             </div>
                         {{else}}
                             <div class="row center-align">
-                                <h5>No food loll</h5>
+                                <h5>未有食物</h5>
                             </div>
                         {{/each}}
                         <div class="divider"></div>
