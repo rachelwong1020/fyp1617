@@ -1,7 +1,7 @@
 .badge-card{
-    max-width: 70%;
+    max-width: 50%;
     position: absolute;
     top: 50%;
-    height: auto;
+    height: 15%;
     text-align: center;
 }
