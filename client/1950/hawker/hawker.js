@@ -8,6 +8,7 @@ var correctCards = 0;
 Template.hawker.onRendered(function () {
     init();
     $('.modal').modal();
+    Session.set('game1950HawkerStartedPageOne', false);
 });
 
 Template.hawker.helpers({
