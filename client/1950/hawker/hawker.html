@@ -5,18 +5,11 @@
                 <div class="row center-align">
                     <div class="dialog-container container-purple large-text white-text">
                         <p>小販為貧苦大眾帶來生活趣味，但想一想，若沒有小販管理，後果會怎樣?</p>
-                        <button id="before_1950_leave" class="btn-theme white">想完了！</button>
+                        <button id="game_1950_hawker_leave" class="btn-theme white">想完了！</button>
                     </div>
                 </div>
             {{else}}
-                <div id="hawker_content" class="container fluid">
-                    <div class="row center-align">
-                        <div id="cardPile" class="z-depth-4"> </div>
-                    </div>
-                    <div class="row center-align">
-                        <div id="cardSlots" class="z-depth-4"> </div>
-                    </div>
-                </div>
+                {{> hawkerGamePlay}}
             {{/if}}
         {{else}}
             {{#if pageOne}}
@@ -57,5 +50,16 @@
                 </div>
             {{/if}}
         {{/if}}
+    </div>
+</template>
+
+<template name="hawkerGamePlay">
+    <div id="hawker_content" class="container fluid">
+        <div class="row center-align">
+            <div id="cardPile" class="z-depth-4"> </div>
+        </div>
+        <div class="row center-align">
+            <div id="cardSlots" class="z-depth-4"> </div>
+        </div>
     </div>
 </template>

@@ -7,6 +7,13 @@ body {
     flex-direction: column;
     overflow: auto !important;
 }
+.btn.fluid, .btn-large.fluid {
+    width: 100%;
+}
+.btn.btn-margin, .btn-large.btn-margin {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .btn-theme {
     font-size: 2rem !important;
     margin-top: 1rem !important;

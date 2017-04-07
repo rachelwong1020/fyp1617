@@ -12,6 +12,7 @@ Template.restaurant.onCreated(function () {
 });
 Template.restaurant.onRendered(function () {
     Session.set('Game1950restaurantOrder', []);
+    Session.set('game1950restaurantDone', false);
 });
 Template.restaurant.helpers({
     hasOrderedFood: function () {
@@ -28,6 +29,17 @@ Template.restaurant.helpers({
     },
     food: function () {
         return food;
+    },
+    hasEnoughMoney: function () {
+        var total = 0;
+        var foods = Session.get('Game1950restaurantOrder');
+        for(var i = 0; i < foods.length; i++) {
+            total += foods[i].price * foods[i].orderAmount;
+        }
+        return total <= Session.get('MainGameMP');
+    },
+    hasPickedFood: function () {
+        return Session.get('Game1950restaurantOrder').length > 0;
     },
     invoiceNum: function () {
         return parseInt(getRandomArbitrary(1000000, 9999999));
@@ -46,17 +58,30 @@ Template.restaurant.helpers({
     orderedFood: function () {
         return Session.get('Game1950restaurantOrder');
     },
-    selectedName: function () {
-        return Session.get('game1950RestaurantSelectedContent').name;
-    },
     tableNum: function () {
         return parseInt(getRandomArbitrary(10, 30));
     },
     totalPrice: function () {
+        var total = 0;
+        var foods = Session.get('Game1950restaurantOrder');
+        for(var i = 0; i < foods.length; i++) {
+            total += foods[i].price * foods[i].orderAmount;
+        }
+        return total;
     }
 });
 
 Template.restaurant.events({
+    'click #check_out': function () {
+        var total = 0;
+        var foods = Session.get('Game1950restaurantOrder');
+        for(var i = 0; i < foods.length; i++) {
+            total += foods[i].price * foods[i].orderAmount;
+        }
+        MainGame.increaseMp(total*-1);
+        MainGame.increaseHp(total);
+        Session.set('game1950restaurantDone', true);
+    },
     'click #food_add': function () {
         var foods = Session.get('Game1950restaurantOrder');
         for(var i = 0; i < foods.length; i++) {
@@ -91,6 +116,17 @@ Template.restaurant.events({
                 }
             }
         }
+    },
+    'click #game_1950_restaurant_leave': function () {
+        var completed = Session.get('MainGameCompletedCheckPoint');
+        if(completed.indexOf(Session.get('MainGameCurrentGame')) < 0) {
+            completed.push(Session.get('MainGameCurrentGame'));
+            Session.set('MainGameCompletedCheckPoint', completed);
+        }
+        Session.set('MainGameCurrentGame', null);
+    },
+    'click #leave_without_checkout': function () {
+        Session.set('MainGameCurrentGame', null);
     }
 });
 

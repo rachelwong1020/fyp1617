@@ -22,6 +22,11 @@ Template.opera.onRendered(function () {
                 Session.set('game1950OperaCompletedContent', completedArr);
                 Session.set('Game1950OperaVideoPlayCompleted', true);
             }
+            var completed = Session.get('MainGameCompletedCheckPoint');
+            if(completed.indexOf(Session.get('MainGameCurrentGame')) < 0) {
+                completed.push(Session.get('MainGameCurrentGame'));
+                Session.set('MainGameCompletedCheckPoint', completed);
+            }
         });
     });
     $('.modal').modal({

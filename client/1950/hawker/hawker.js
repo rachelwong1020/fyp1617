@@ -6,9 +6,10 @@ var imageRelationship = [
 
 var correctCards = 0;
 Template.hawker.onRendered(function () {
-    init();
     $('.modal').modal();
     Session.set('game1950HawkerStartedPageOne', false);
+    Session.set('game1950HawkerStarted', false);
+    Session.set('game1950HawkerDone', false);
 });
 
 Template.hawker.helpers({
@@ -27,7 +28,7 @@ Template.hawker.helpers({
 });
 
 Template.hawker.events({
-    'click #before_1950_leave': function () {
+    'click #game_1950_hawker_leave': function () {
         var completed = Session.get('MainGameCompletedCheckPoint');
         if(completed.indexOf(Session.get('MainGameCurrentGame')) < 0) {
             completed.push(Session.get('MainGameCurrentGame'));
@@ -41,6 +42,10 @@ Template.hawker.events({
     'click #start_1950_hawker_next': function () {
         Session.set('game1950HawkerStartedPageOne', true);
     }
+});
+
+Template.hawkerGamePlay.onRendered(function () {
+    init();
 });
 
 function init() {

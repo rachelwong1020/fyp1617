@@ -1,10 +1,10 @@
 <template name="restaurant">
-<div class="container fluid">
+<div class="container wide">
     {{#if gameDone}}
         <div class="row center-align">
             <div class="dialog-container container-purple large-text white-text">
                 <p>謝謝惠顧！承惠${{totalPrice}}，獲得開心指數{{totalPrice}}。現今很多傳統茶樓都逐漸被淘汰了，要好好珍惜啊！</p>
-                <button id="before_1950_leave" class="btn-theme white">知道</button>
+                <button id="game_1950_restaurant_leave" class="btn-theme white">知道</button>
             </div>
         </div>
     {{else}}
@@ -84,6 +84,14 @@
                         </div>
                     </div>
                 </div>
+                {{#if hasPickedFood}}
+                    {{#if hasEnoughMoney}}
+                        <div id="check_out" class="btn-large fluid waves-effect waves-light btn-margin">結賬</div>
+                    {{else}}
+                        <div class="btn-large fluid waves-effect waves-light btn-margin red darken-2">沒有足夠金錢:(</div>
+                    {{/if}}
+                    <div id="leave_without_checkout" class="btn-large fluid waves-effect waves-light grey btn-margin">不吃了</div>
+                {{/if}}
             </div>
         </div>
     {{/if}}
