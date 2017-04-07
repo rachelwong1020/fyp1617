@@ -5,7 +5,7 @@ Template.MainGameLayout.onRendered(function () {
         Session.set('MainGameKP', 100);
     }
     if(!Session.get('MainGameMP')) {
-        Session.set('MainGameMP', 100);
+        Session.set('MainGameMP', 5000);
     }
     if(!Session.get('MainGameHP')) {
         Session.set('MainGameHP', 100);
@@ -37,8 +37,11 @@ Template.MainGameLayout.helpers({
 Template.MainGameLayout.events({
     'click .game-description': function () {
         Session.set('MainGameCurrentGame', this.gameTemplate);
-},
+    },
     'click #game_background': function () {
         Session.set('MainGameCurrentGame', 'gamebg');
-    }
+    },
+    'click #game_badge': function () {
+        Session.set('MainGameCurrentGame', 'badge1950');
+    },
 });
