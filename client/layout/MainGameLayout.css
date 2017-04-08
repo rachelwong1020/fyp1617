@@ -80,6 +80,12 @@
 #main_game_layout #status_bar .user-icon {
     height: 130px;
 }
+#main_game_layout #status_bar #timeout_bar {
+    max-width: 350px;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 175px);
+}
 #main_game_layout #main_game_content {
     width: calc(100vw - 170px);
     height: calc(100vh - 162px);

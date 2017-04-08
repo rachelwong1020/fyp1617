@@ -7,7 +7,9 @@ var operas = [
 var video;
 
 Template.opera.onRendered(function () {
-    Session.set('game1950OperaCompletedContent', []);
+    if(!Session.get('game1950OperaCompletedContent')) {
+        Session.set('game1950OperaCompletedContent', []);
+    }
     video = videojs(
         "opera_video",
         {"controls": true, "autoplay": true,"techOrder":["html5"],preload:"auto"},
@@ -15,12 +17,12 @@ Template.opera.onRendered(function () {
     video.ready(function () {
         var player = this;
         player.on('ended', function() {
+            Session.set('Game1950OperaVideoPlayCompleted', true);
             MainGame.increaseHp(300);
             var completedArr = Session.get('game1950OperaCompletedContent');
             if(completedArr.indexOf(Session.get('game1950OperaSelectedContent').name) < 0) {
                 completedArr.push(Session.get('game1950OperaSelectedContent').name);
                 Session.set('game1950OperaCompletedContent', completedArr);
-                Session.set('Game1950OperaVideoPlayCompleted', true);
             }
             var completed = Session.get('MainGameCompletedCheckPoint');
             if(completed.indexOf(Session.get('MainGameCurrentGame')) < 0) {
@@ -41,7 +43,6 @@ Template.opera.onRendered(function () {
         }
     });
 });
-
 Template.opera.helpers({
     gameDone: function () {
         return Session.get('game1950OperaCompletedContent').length == operas.length;

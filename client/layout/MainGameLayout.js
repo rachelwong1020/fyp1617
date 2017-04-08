@@ -32,6 +32,18 @@ Template.MainGameLayout.helpers({
     },
     mpPoint: function () {
         return Session.get('MainGameMP');
+    },
+    timeLineImage: function () {
+        switch (Session.get('currentMain')) {
+            case '1950':
+                return 'main_game_layout_timeline_1950.svg';
+            case '1960':
+                return 'main_game_layout_timeline_1960.svg';
+            case '1970':
+                return 'main_game_layout_timeline_1970.svg';
+            case '1980':
+                return 'main_game_layout_timeline_1980.svg';
+        }
     }
 });
 Template.MainGameLayout.events({
