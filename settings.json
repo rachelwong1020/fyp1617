@@ -34,19 +34,19 @@
           {
             "name": "理髮廳",
             "for": "salon",
-            "btnClass": "yellow-btn",
+            "btnClass": "grey-btn",
             "description": "在理髮廳體驗為顧客服務，賺取金錢！"
           },
           {
             "name": "碼頭",
             "for": "pier",
-            "btnClass": "yellow-btn",
+            "btnClass": "grey-btn",
             "description": "在碼頭做一天苦力搬運貨物，靠勞力賺取金錢！"
           },
           {
             "name": "時裝店",
             "for": "boutique",
-            "btnClass": "yellow-btn",
+            "btnClass": "grey-btn",
             "description": "在時裝店做裁縫賺取金錢，需要智慧指數達800才能體驗！"
           }
         ]

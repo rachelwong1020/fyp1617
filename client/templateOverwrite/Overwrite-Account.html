@@ -5,7 +5,7 @@
 <template name="override-atPwdForm">
     <div class="at-pwd-form">
         <form role="form" id="at-pwd-form" class="{{disabled}} col s12" novalidate action="#" method="POST">
-            <div class="row">
+            <div class="row center-align">
                 {{#each fields}}
                     {{> atInput}}
                 {{/each}}
@@ -13,7 +13,7 @@
             {{#if showReCaptcha}}
                 {{> atReCaptcha}}
             {{/if}}
-            <div class="row">
+            <div class="row center-align">
                 {{> atPwdFormBtn}}
             </div>
             {{#if showForgotPasswordLink}}
