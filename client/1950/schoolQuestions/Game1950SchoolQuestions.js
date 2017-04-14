@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 1/4/2017.
- */
 Template.Game1950SchoolQuestions.onCreated(function () {
     Session.set('Game1950SchoolQuestionStarted', false);
     Session.set('QuestionCurrentDecade', '50s');

@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 1/4/2017.
- */
 var ScoreCollection = new Mongo.Collection('score');
 Meteor.publish('topScores', function () {
 });

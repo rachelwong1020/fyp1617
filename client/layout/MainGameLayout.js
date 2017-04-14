@@ -55,5 +55,5 @@ Template.MainGameLayout.events({
     },
     'click #game_badge': function () {
         Session.set('MainGameCurrentGame', 'badge1950');
-    },
+    }
 });

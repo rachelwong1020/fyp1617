@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 1/4/2017.
- */
 var usedQuestion = [];
 var questionAmount;
 Template.Questions.onCreated(function () {
