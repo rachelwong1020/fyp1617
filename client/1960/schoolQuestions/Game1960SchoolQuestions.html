@@ -1,0 +1,39 @@
+<template name="Game1960SchoolQuestions">
+    <div class="dialog-container wide container-purple large-text white-text">
+        {{#if gameStarted}}
+            {{#if gameDone}}
+                <div class="row row-margin-0">
+                    <div class="col s4">
+                        <div class="char-img">
+                            <img src="/resources/character/mingming.png">
+                        </div>
+                    </div>
+                    <div class="col s8">
+                        <p>恭喜你學習了新知識！獲得智慧指數{{score}}！</p>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button id="school_question_game_leave" class="btn-theme white">太好了！</button>
+                </div>
+            {{else}}
+                {{> Questions}}
+            {{/if}}
+        {{else}}
+            <div class="container fluid">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="char-img">
+                            <img src="/resources/character/mingming.png">
+                        </div>
+                    </div>
+                    <div class="col s8">
+                        <h4>在學校要通過考驗，請回答3條問題。</h4>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button id="start_school_question_game" class="btn-theme white">來吧</button>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</template>
