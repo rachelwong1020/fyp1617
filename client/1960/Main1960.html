@@ -1,0 +1,24 @@
+<template name="Main1960">
+    <div class="container fluid center-align">
+        {{#if gameStarted}}
+            {{#if gameDone}}
+                <div class="row">
+                    <div class="dialog-container container-purple large-text white-text">
+                        <p>完了</p>
+                        <button id="start_1960_leave" class="btn-theme white">繼續玩</button>
+                    </div>
+                </div>
+            {{else}}
+                {{> Game1960Heat}}
+            {{/if}}
+        {{else}}
+            <div class="row">
+                <div class="dialog-container container-purple large-text white-text">
+                    <p>1960年代的住屋簡陋，大多靠山或靠海。</p>
+                    <p>打開空格，把相同的圖片配對吧！</p>
+                    <button id="start_1960_game" class="btn-theme white">知道了</button>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</template>
