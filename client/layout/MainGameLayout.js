@@ -72,6 +72,7 @@ Template.MainGameLayout.events({
                 FlowRouter.go('1980-main');
                 break;
             case '1980':
+                FlowRouter.go('ranking');
                 break;
         }
     }
