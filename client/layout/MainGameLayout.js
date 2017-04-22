@@ -21,6 +21,9 @@ Template.MainGameLayout.helpers({
     gameMain: function () {
         return Session.get('MainGameCurrentGame');
     },
+    hasAtLeastOneCOmplete: function () {
+        return Session.get('MainGameCompletedCheckPoint').length > 0;
+    },
     hpPoint: function () {
         return Session.get('MainGameHP');
     },
@@ -55,5 +58,21 @@ Template.MainGameLayout.events({
     },
     'click #game_badge': function () {
         Session.set('MainGameCurrentGame', 'badge1950');
+    },
+    'click #main_game_leave': function () {
+        Session.set('MainGameCompletedCheckPoint', []);
+        switch (Session.get('currentMain')) {
+            case '1950':
+                FlowRouter.go('1960-main-game');
+                break;
+            case '1960':
+                FlowRouter.go('1970-main-game');
+                break;
+            case '1970':
+                FlowRouter.go('1980-main-game');
+                break;
+            case '1980':
+                break;
+        }
     }
 });

@@ -11,13 +11,15 @@
                     </li>
                 {{/each}}
             </ul>
-            <ul id="main-game-leave" class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="collapsible-header">
-                        <button class="purple-btn">時光機</button>
-                    </div>
-                </li>
-            </ul>
+            {{#if hasAtLeastOneCOmplete}}
+                <ul id="main_game_leave" class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <button class="purple-btn">時光機</button>
+                        </div>
+                    </li>
+                </ul>
+            {{/if}}
         </div>
         <div id="main_game_content" class="valign-wrapper" style="background-image: url(/resources/layout/map.svg);">
             {{> Template.dynamic template=gameMain}}
