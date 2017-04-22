@@ -63,13 +63,13 @@ Template.MainGameLayout.events({
         Session.set('MainGameCompletedCheckPoint', []);
         switch (Session.get('currentMain')) {
             case '1950':
-                FlowRouter.go('1960-main-game');
+                FlowRouter.go('1960-main');
                 break;
             case '1960':
-                FlowRouter.go('1970-main-game');
+                FlowRouter.go('1970-main');
                 break;
             case '1970':
-                FlowRouter.go('1980-main-game');
+                FlowRouter.go('1980-main');
                 break;
             case '1980':
                 break;

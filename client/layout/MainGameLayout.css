@@ -101,7 +101,7 @@
 #main_game_layout .game-description {
     cursor: pointer;
 }
-#main_game_layout #main-game-leave {
+#main_game_layout #main_game_leave {
     width: 100%;
     position: absolute;
     bottom: 0;
