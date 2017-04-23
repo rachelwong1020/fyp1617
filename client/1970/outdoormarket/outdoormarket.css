@@ -9,34 +9,34 @@
 .outdoormarket-card .card-title {
     font-size: 20px;
 }
-.food-card {
+.product-card {
     border: 2px solid #b71c1c;
 }
-.food-card .card-image {
+.product-card .card-image {
     max-width: 30% !important;
 }
-.food-card .card-content, .food-card .card-action {
+.product-card .card-content, .product-card .card-action {
     padding: 10px !important;
 }
-.food-card .card-content {
+.product-card .card-content {
     height: 102px;
     overflow: scroll;
 }
-.food-card .food-price {
+.product-card .product-price {
     font-size: 1.5em;
 }
-.food-card .food-action {
+.product-card .product-action {
     margin-left: 0.25em;
     margin-right: 0.25em;
 }
-.food-card .card-title {
+.product-card .card-title {
     font-size: 1.5rem !important;
 }
-.food-card-master-card-title {
+.product-card-master-card-title {
     font-size: 3em !important;
     font-weight: 500 !important;
     color: #b71c1c;
 }
-.food-card-master-card-title .right {
+.product-card-master-card-title .right {
     font-size: 1rem;
 }

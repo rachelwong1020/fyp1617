@@ -27,7 +27,7 @@
                                             <div class="card-action">
                                                 <a href="#" class="product-price">${{price}}</a>
                                                 <a id="product_add" class="waves-effect waves-light btn-floating green darken-4 right product-action"><i class="material-icons">done</i></a>
-                                                <a id="product_remove" class="{{#if hasOrderedproduct}}{{else}}disabled {{/if}}waves-effect waves-light btn-floating red darken-4 right product-action"><i class="material-icons">clear</i></a>
+                                                <a id="product_remove" class="{{#if hasOrderedProduct}}{{else}}disabled {{/if}}waves-effect waves-light btn-floating red darken-4 right product-action"><i class="material-icons">clear</i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -49,9 +49,9 @@
                         <div class="divider"></div>
                         {{#each orderedProduct}}
                             <div class="row">
-                                <div class="col s7">{{name}}</div>
+                                <div class="col s9">{{name}}</div>
                                 <div class="col s3">${{price}}</div>
-                                <div class="col s2">x{{orderAmount}}</div>
+                                <!--<div class="col s2">x{{orderAmount}}</div>-->
                             </div>
                         {{else}}
                             <div class="row center-align">
@@ -71,7 +71,7 @@
                 </div>
                 {{#if hasPickedProduct}}
                     {{#if hasEnoughMoney}}
-                        <div id="check_out" class="btn-large fluid waves-effect waves-light btn-margin">結賬</div>
+                        <div id="check_out" class="btn-large fluid waves-effect waves-light btn-margin">買完了</div>
                     {{else}}
                         <div class="btn-large fluid waves-effect waves-light btn-margin red darken-2">沒有足夠金錢:(</div>
                     {{/if}}

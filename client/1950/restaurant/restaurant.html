@@ -27,8 +27,8 @@
                                             </div>
                                             <div class="card-action">
                                                 <a href="#" class="food-price">${{price}}</a>
-                                                <a id="food_add" class="waves-effect waves-light btn-floating green darken-4 right food-action"><i class="material-icons">add</i></a>
-                                                <a id="food_remove" class="{{#if hasOrderedFood}}{{else}}disabled {{/if}}waves-effect waves-light btn-floating red darken-4 right food-action"><i class="material-icons">remove</i></a>
+                                                <a id="food_add" class="waves-effect waves-light btn-floating green darken-4 right food-action"><i class="material-icons">done</i></a>
+                                                <a id="food_remove" class="{{#if hasOrderedFood}}{{else}}disabled {{/if}}waves-effect waves-light btn-floating red darken-4 right food-action"><i class="material-icons">clear</i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -64,9 +64,9 @@
                         <div class="divider"></div>
                         {{#each orderedFood}}
                             <div class="row">
-                                <div class="col s7">{{name}}</div>
+                                <div class="col s9">{{name}}</div>
                                 <div class="col s3">${{price}}</div>
-                                <div class="col s2">x{{orderAmount}}</div>
+                                <!--<div class="col s2">x{{orderAmount}}</div>-->
                             </div>
                         {{else}}
                             <div class="row center-align">

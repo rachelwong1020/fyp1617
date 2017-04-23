@@ -39,10 +39,10 @@ Template.outdoormarket.helpers({
     hasPickedProduct: function () {
         return Session.get('Game1970outdoormarketOrder').length > 0;
     },
-    invoiceNum: function () {
+    /*invoiceNum: function () {
         return parseInt(getRandomArbitrary(1000000, 9999999));
     },
-    /*invoiceTime: function () {
+    invoiceTime: function () {
         return currentTime.format('YYYY - MM - DD HH:mm:ss');
     },*/
     orderedAmount: function () {
@@ -56,9 +56,9 @@ Template.outdoormarket.helpers({
     orderedProduct: function () {
         return Session.get('Game1970outdoormarketOrder');
     },
-    tableNum: function () {
+    /*tableNum: function () {
         return parseInt(getRandomArbitrary(10, 30));
-    },
+    },*/
     totalPrice: function () {
         var total = 0;
         var products = Session.get('Game1970outdoormarketOrder');
@@ -128,6 +128,6 @@ Template.outdoormarket.events({
     }
 });
 
-function getRandomArbitrary(min, max) {
+/*function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
-}
+}*/

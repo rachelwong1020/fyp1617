@@ -3,7 +3,7 @@
     height: 300px;
 }
 .cinema-card .card-content {
-    height: 176px;
+    height: 50px;
     overflow: scroll;
 }
 .cinema-card .card-title {

@@ -1,8 +1,8 @@
 var movies = [
-    {name: '半斤八兩', coverImg: '半斤八兩.jpg', description: '1976年 - 主演：許冠文、許冠傑、許冠英', video: '半斤八兩1976.mp4'},
-    {name: '精武門', coverImg: '精武門.jpg', description: '1972年 - 主演：李小龍、苗可秀', video: '精武門1972.mp4'},
-    {name: '鬼馬雙星', coverImg: '鬼馬雙星.jpg', description: '1974年 - 主演：許冠文、許冠傑', video: '鬼馬雙星1974.mp4'},
-    {name: '龍爭虎鬥', coverImg: '龍爭虎鬥.jpg', description: '1973年 - 主演：李小龍、尊薩遜、鍾玲玲', video: '龍爭虎鬥1973.mp4'},
+    {name: '半斤八兩', coverImg: '半斤八兩.png', description: '1976年 - 主演：許冠文、許冠傑、許冠英', video: '半斤八兩1976.mp4'},
+    {name: '精武門', coverImg: '精武門.png', description: '1972年 - 主演：李小龍、苗可秀', video: '精武門1972.mp4'},
+    {name: '鬼馬雙星', coverImg: '鬼馬雙星.png', description: '1974年 - 主演：許冠文、許冠傑', video: '鬼馬雙星1974.mp4'},
+    {name: '龍爭虎鬥', coverImg: '龍爭虎鬥.png', description: '1973年 - 主演：李小龍、尊薩遜、鍾玲玲', video: '龍爭虎鬥1973.mp4'},
 ];
 var video;
 
