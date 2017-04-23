@@ -1,0 +1,14 @@
+#hkcoliseum_video {
+    width: 100%;
+    height: 300px;
+}
+.hkcoliseum-card .card-content {
+    height: 176px;
+    overflow: scroll;
+}
+.hkcoliseum-card .card-title {
+    font-size: 20px;
+}
+.hkcoliseum-card .card-action {
+    padding: 10px;
+}
