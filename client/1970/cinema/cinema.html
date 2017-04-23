@@ -1,0 +1,93 @@
+<template name="cinema">
+    <div class="container">
+        {{#if gameStarted}}
+            {{#if gameDone}}
+                <div class="row center-align">
+                    <div class="dialog-container container-purple large-text white-text">
+                        <p>想一想，你覺得舊式電影跟現今電影最大的分別是甚麼？</p>
+                        <button id="1970_cinema_leave" class="btn-theme white">想完了！</button>
+                    </div>
+                </div>
+            {{else}}
+                <div class="row">
+                    {{#each cinema}}
+                        <div class="col m6 s12">
+                            <div class="card horizontal cinema-card">
+                                <div class="card-image valign-wrapper">
+                                    <img src="/resources/games/Game1970cinema/img/{{coverImg}}">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <span class="card-title">{{name}}</span>
+                                        <p>{{description}}</p>
+                                    </div>
+                                    <div class="card-action">
+                                        {{#if isVideoCompleted}}
+                                            <a class="green-text cinema-play-video">看過了</a>
+                                        {{else}}
+                                            {{#if hasEnoughMoney}}
+                                                <a class="cinema-play-video">我想觀看這片</a>
+                                            {{else}}
+                                                <a class="red-text">你沒有足夠金錢啊:(</a>
+                                            {{/if}}
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/if}}
+        {{else}}
+            {{#if pageOne}}
+                <div class="dialog-container wide container-purple large-text white-text">
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/character/mingming.png">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <h4>1970年代香港電影蓬勃發展，產量大升，更因為喜劇電影及功夫片而在國際急速冒起，風靡全球。</h4>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button id="start_1970_cinema_next" class="btn-theme white">下一頁</button>
+                        </div>
+                    </div>
+                </div>
+            {{else}}
+                <div class="dialog-container wide container-purple large-text white-text">
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/character/mingming.png">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <h4>你可以在這裡欣賞不同電影，每觀看完一套電影都會獲得開心指數！(每觀看一套電影需$200)</h4>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button id="start_1970_cinema_game" class="btn-theme white">知道了</button>
+                        </div>
+                    </div>
+                </div>
+            {{/if}}
+        {{/if}}
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>{{selectedName}}</h4>
+                <video id="cinema_video" class="video-js vjs-default-skin vjs-big-play-centered" controls>
+                    <source type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="{{#if isVideoPlayCompleted}}{{else}}disabled{{/if}} modal-action modal-close waves-effect waves-green btn-flat">看完</a>
+            </div>
+        </div>
+    </div>
+</template>
