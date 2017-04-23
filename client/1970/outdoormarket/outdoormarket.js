@@ -1,123 +1,121 @@
-var food = [
-    {name: '鵪鶉蛋燒賣皇', description: '原粒鵪鶉蛋呈溏心狀態，一咬蛋汁四溢，教人一試難忘！', price: 200, coverImg: 'siumai.jpg'},
-    {name: '蝦醬腩仔蒸飯', description: '這飯用上肥腩隔住的五花腩， 蒸出來特別爽滑！', price: 300, coverImg: 'rice.jpg'},
-    {name: '香滑鮮蝦腸粉', description: '腸粉晶瑩剔透，粉皮能整張夾起不斷裂！', price: 100, coverImg: 'cheungfun.jpg'},
-    {name: '古法千層糕', description: '香香甜甜絕對是小朋友至愛啊！', price: 100, coverImg: 'go.jpg'},
-    {name: '豉汁鳳爪', description: '豉汁鳳爪是必要吃的點心之一，雖然功夫較多但味道很好！', price: 200, coverImg: 'chickleg.jpg'},
-    {name: '荷葉珍珠雞', description: '軟軟的糯米飯包裹著豐富的餡料，蒸過後荷葉清香完全融入材料中！', price: 100, coverImg: 'pearlchick.jpg'}
+var product = [
+    {name: '傳呼機', description: '能接收和傳送簡易文字信息功能的個人無線電通訊工具。', price: 200, coverImg: 'callgay.png'},
+    {name: '檸檬王', description: '味道香甜，具清熱解毒、袪痰止咳等功效。', price: 100, coverImg: 'lemonlam.png'},
+    {name: '嗱喳麵', description: '香港特色廉價麵食，', price: 100, coverImg: 'noodles.png'},
+    {name: '飛機欖', description: '因小販會拋上樓上售賣如放紙飛機一樣而命名。', price: 100, coverImg: 'planelam.png'}
 ];
-var currentTime;
-Template.restaurant.onCreated(function () {
+/*var currentTime;
+Template.outdoormarket.onCreated(function () {
     currentTime = moment();
+});*/
+Template.outdoormarket.onRendered(function () {
+    Session.set('Game1970outdoormarketOrder', []);
+    Session.set('game1970outdoormarketDone', false);
 });
-Template.restaurant.onRendered(function () {
-    Session.set('Game1950restaurantOrder', []);
-    Session.set('game1950restaurantDone', false);
-});
-Template.restaurant.helpers({
-    hasOrderedFood: function () {
-        var foods = Session.get('Game1950restaurantOrder');
-        for(var i = 0; i < foods.length; i++) {
-            if(foods[i].name == this.name) {
+Template.outdoormarket.helpers({
+    hasOrderedProduct: function () {
+        var products = Session.get('Game1970outdoormarketOrder');
+        for(var i = 0; i < products.length; i++) {
+            if(products[i].name == this.name) {
                 return true;
             }
         }
         return false;
     },
     gameDone: function () {
-        return Session.get('game1950restaurantDone');
+        return Session.get('game1970outdoormarketDone');
     },
-    food: function () {
-        return food;
+    product: function () {
+        return product;
     },
     hasEnoughMoney: function () {
         var total = 0;
-        var foods = Session.get('Game1950restaurantOrder');
-        for(var i = 0; i < foods.length; i++) {
-            total += foods[i].price * foods[i].orderAmount;
+        var products = Session.get('Game1970outdoormarketOrder');
+        for(var i = 0; i < products.length; i++) {
+            total += products[i].price * products[i].orderAmount;
         }
         return total <= Session.get('MainGameMP');
     },
-    hasPickedFood: function () {
-        return Session.get('Game1950restaurantOrder').length > 0;
+    hasPickedProduct: function () {
+        return Session.get('Game1970outdoormarketOrder').length > 0;
     },
     invoiceNum: function () {
         return parseInt(getRandomArbitrary(1000000, 9999999));
     },
-    invoiceTime: function () {
+    /*invoiceTime: function () {
         return currentTime.format('YYYY - MM - DD HH:mm:ss');
-    },
+    },*/
     orderedAmount: function () {
         var total = 0;
-        var foods = Session.get('Game1950restaurantOrder');
-        for(var i = 0; i < foods.length; i++) {
-            total += foods[i].price * foods[i].orderAmount;
+        var products = Session.get('Game1970outdoormarketOrder');
+        for(var i = 0; i < products.length; i++) {
+            total += products[i].price * products[i].orderAmount;
         }
         return total.toFixed(2);
     },
-    orderedFood: function () {
-        return Session.get('Game1950restaurantOrder');
+    orderedProduct: function () {
+        return Session.get('Game1970outdoormarketOrder');
     },
     tableNum: function () {
         return parseInt(getRandomArbitrary(10, 30));
     },
     totalPrice: function () {
         var total = 0;
-        var foods = Session.get('Game1950restaurantOrder');
-        for(var i = 0; i < foods.length; i++) {
-            total += foods[i].price * foods[i].orderAmount;
+        var products = Session.get('Game1970outdoormarketOrder');
+        for(var i = 0; i < products.length; i++) {
+            total += products[i].price * products[i].orderAmount;
         }
         return total;
     }
 });
 
-Template.restaurant.events({
+Template.outdoormarket.events({
     'click #check_out': function () {
         var total = 0;
-        var foods = Session.get('Game1950restaurantOrder');
-        for(var i = 0; i < foods.length; i++) {
-            total += foods[i].price * foods[i].orderAmount;
+        var products = Session.get('Game1970outdoormarketOrder');
+        for(var i = 0; i < products.length; i++) {
+            total += products[i].price * products[i].orderAmount;
         }
         MainGame.increaseMp(total*-1);
         MainGame.increaseHp(total);
-        Session.set('game1950restaurantDone', true);
+        Session.set('game1970outdoormarketDone', true);
     },
-    'click #food_add': function () {
-        var foods = Session.get('Game1950restaurantOrder');
-        for(var i = 0; i < foods.length; i++) {
-            if(foods[i].name == this.name) {
-                foods[i].orderAmount += 1;
-                Session.set('Game1950restaurantOrder', foods);
+    'click #product_add': function () {
+        var products = Session.get('Game1970outdoormarketOrder');
+        for(var i = 0; i < products.length; i++) {
+            if(products[i].name == this.name) {
+                products[i].orderAmount += 1;
+                Session.set('Game1970outdoormarketOrder', products);
                 return;
             }
         }
-        var newFood = this;
-        newFood.orderAmount = 1;
-        foods.push(newFood);
-        Session.set('Game1950restaurantOrder', foods);
+        var newProduct = this;
+        newProduct.orderAmount = 1;
+        products.push(newProduct);
+        Session.set('Game1970outdoormarketOrder', products);
     },
-    'click #food_remove': function () {
-        var foods = Session.get('Game1950restaurantOrder');
-        for(var i = 0; i < foods.length; i++) {
-            if(foods[i].name == this.name) {
-                if(foods[i].orderAmount == 1) {
+    'click #product_remove': function () {
+        var products = Session.get('Game1970outdoormarketOrder');
+        for(var i = 0; i < products.length; i++) {
+            if(products[i].name == this.name) {
+                if(products[i].orderAmount == 1) {
                     var newArr = [];
-                    for(var j = 0; j < foods.length; j++) {
-                        if(foods[j].name != this.name) {
-                            newArr.push(foods[j]);
+                    for(var j = 0; j < products.length; j++) {
+                        if(products[j].name != this.name) {
+                            newArr.push(products[j]);
                         }
                     }
-                    Session.set('Game1950restaurantOrder', newArr);
+                    Session.set('Game1970outdoormarketOrder', newArr);
                     return;
                 } else {
-                    foods[i].orderAmount -= 1;
-                    Session.set('Game1950restaurantOrder', foods);
+                    products[i].orderAmount -= 1;
+                    Session.set('Game1970outdoormarketOrder', products);
                     return;
                 }
             }
         }
     },
-    'click #game_1950_restaurant_leave': function () {
+    'click #game_1970_outdoormarket_leave': function () {
         var completed = Session.get('MainGameCompletedCheckPoint');
         if(completed.indexOf(Session.get('MainGameCurrentGame')) < 0) {
             completed.push(Session.get('MainGameCurrentGame'));

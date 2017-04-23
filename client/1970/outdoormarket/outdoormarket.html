@@ -3,22 +3,21 @@
     {{#if gameDone}}
         <div class="row center-align">
             <div class="dialog-container container-purple large-text white-text">
-                <p>謝謝惠顧！承惠${{totalPrice}}，獲得開心指數{{totalPrice}}。現今很多傳統茶樓都逐漸被淘汰了，要好好珍惜啊！</p>
-                <button id="game_1950_restaurant_leave" class="btn-theme white">知道</button>
+                <p>謝謝！承惠${{totalPrice}}，獲得開心指數{{totalPrice}}。大笪地在香港已經成為歷史了，你能想到甚麼方法使這種傳統特色承傳下去嗎？</p>
+                <button id="game_1970_outdoormarket_leave" class="btn-theme white">知道</button>
             </div>
         </div>
     {{else}}
         <div class="row">
             <div class="col m9 s12">
-                <div class="card food-card-master">
+                <div class="card product-card-master">
                     <div class="card-content">
-                        <span class="card-title food-card-master-card-title">鳳城大酒家<span class="right">檯號: __________ 經手人: __________</span></span>
                         <div class="row">
-                            {{#each food}}
+                            {{#each product}}
                                 <div class="col m6 s12">
-                                    <div class="card food-card horizontal">
+                                    <div class="card product-card horizontal">
                                         <div class="card-image">
-                                            <img src="/resources/games/Game1950restaurant/img/{{coverImg}}">
+                                            <img src="/resources/games/Game1970outdoormarket/img/{{coverImg}}">
                                         </div>
                                         <div class="card-stacked">
                                             <div class="card-content">
@@ -26,9 +25,9 @@
                                                 <p>{{description}}</p>
                                             </div>
                                             <div class="card-action">
-                                                <a href="#" class="food-price">${{price}}</a>
-                                                <a id="food_add" class="waves-effect waves-light btn-floating green darken-4 right food-action"><i class="material-icons">add</i></a>
-                                                <a id="food_remove" class="{{#if hasOrderedFood}}{{else}}disabled {{/if}}waves-effect waves-light btn-floating red darken-4 right food-action"><i class="material-icons">remove</i></a>
+                                                <a href="#" class="product-price">${{price}}</a>
+                                                <a id="product_add" class="waves-effect waves-light btn-floating green darken-4 right product-action"><i class="material-icons">done</i></a>
+                                                <a id="product_remove" class="{{#if hasOrderedproduct}}{{else}}disabled {{/if}}waves-effect waves-light btn-floating red darken-4 right product-action"><i class="material-icons">clear</i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -39,30 +38,16 @@
                 </div>
             </div>
             <div class="col m3 s12">
-                <div class="card food-invoice">
+                <div class="card product-invoice">
                     <div class="card-content">
-                        <div class="row center-align">
-                            <h4>點菜單</h4>
-                            <h5>鳳城大酒家</h5>
+                        <div class="card-image">
+                            <img src="/resources/games/Game1970outdoormarket/img/banner.jpg">
                         </div>
-                        單號: {{invoiceNum}}<br>
-                        日期: {{invoiceTime}}<br>
-                        <div class="row">
-                            <div class="col s6">
-                                終端: P510
-                            </div>
-                            <div class="col s6">
-                                服務員: 明明
-                            </div>
-                            <div class="col s6">
-                                桌號: {{tableNum}}
-                            </div>
-                            <div class="col s6">
-                                來客數: 1
-                            </div>
+                        <div class="row center-align">
+                            <h5>大笪地</h5>
                         </div>
                         <div class="divider"></div>
-                        {{#each orderedFood}}
+                        {{#each orderedProduct}}
                             <div class="row">
                                 <div class="col s7">{{name}}</div>
                                 <div class="col s3">${{price}}</div>
@@ -70,7 +55,7 @@
                             </div>
                         {{else}}
                             <div class="row center-align">
-                                <h5>未有食物</h5>
+                                <h5>未有貨品</h5>
                             </div>
                         {{/each}}
                         <div class="divider"></div>
@@ -84,13 +69,13 @@
                         </div>
                     </div>
                 </div>
-                {{#if hasPickedFood}}
+                {{#if hasPickedProduct}}
                     {{#if hasEnoughMoney}}
                         <div id="check_out" class="btn-large fluid waves-effect waves-light btn-margin">結賬</div>
                     {{else}}
                         <div class="btn-large fluid waves-effect waves-light btn-margin red darken-2">沒有足夠金錢:(</div>
                     {{/if}}
-                    <div id="leave_without_checkout" class="btn-large fluid waves-effect waves-light grey btn-margin">不吃了</div>
+                    <div id="leave_without_checkout" class="btn-large fluid waves-effect waves-light grey btn-margin">不買了</div>
                 {{/if}}
             </div>
         </div>
