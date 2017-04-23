@@ -1,10 +1,12 @@
 var jade = [
-    {price: 200, coverImg: 'jade1.png'},
-    {price: 100, coverImg: 'jade2.png'},
-    {price: 100, coverImg: 'jade3.png'},
-    {price: 200, coverImg: 'jade4.png'},
-    {price: 100, coverImg: 'jade5.png'},
-    {price: 300, coverImg: 'jade6.png'}
+    {name: '玉石手鐲', price: 200, coverImg: 'jade1.png'},
+    {name: '青玉吊飾', price: 100, coverImg: 'jade2.png'},
+    {name: '玉瑗', price: 100, coverImg: 'jade3.png'},
+    {name: '藍田玉龍', price: 200, coverImg: 'jade4.png'},
+    {name: '佛玉吊飾', price: 100, coverImg: 'jade5.png'},
+    {name: '玉王蓋章', price: 300, coverImg: 'jade6.png'}
+
+
 ];
 Template.jademarket.onRendered(function () {
     Session.set('Game1980jademarketOrder', []);

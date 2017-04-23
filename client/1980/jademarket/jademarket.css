@@ -20,7 +20,7 @@
 }
 .jade-card .card-content {
     height: 102px;
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 .jade-card .jade-price {
     font-size: 1.5em;
