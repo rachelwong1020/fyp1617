@@ -48,7 +48,7 @@ Template.cinema.helpers({
         return Session.get('game1970CinemaCompletedContent').length == movies.length;
     },
     gameStarted: function () {
-        return Session.get('game1970CinemaStarted');
+        return Session.get('game1970cinemaStarted');
     },
     hasEnoughMoney: function () {
         return Session.get('MainGameMP') >= 200;
@@ -63,7 +63,7 @@ Template.cinema.helpers({
         return movies;
     },
     pageOne: function () {
-        return !Session.get('game197CinemaStartedPageOne');
+        return !Session.get('game1970cinemaStartedPageOne');
     },
     selectedName: function () {
         return Session.get('game1970CinemaSelectedContent').name;
