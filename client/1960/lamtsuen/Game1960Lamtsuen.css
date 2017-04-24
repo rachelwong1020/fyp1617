@@ -1,0 +1,31 @@
+#game_1960_lamtsuen #tree {
+    width: 80%;
+    position: absolute;
+    top:2em;
+    left: 10%;
+}
+#game_1960_lamtsuen #prayitem {
+    width: 150px;
+    position: absolute;
+    bottom: 100px;
+    left: 15%;
+}
+#game_1960_lamtsuen #energy_bar {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+    z-index: 100;
+}
+#game_1960_lamtsuen #energy_pointer {
+    width: 4%;
+    position: absolute;
+    left: 25%;
+    bottom: 25px;
+    z-index: 101;
+}
+#game_1960_lamtsuen #restart_game {
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+}
