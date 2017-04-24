@@ -65,7 +65,7 @@
             "for": "lamtsuen",
             "btnClass": "red-btn",
             "description": "在林村你可以拋寶碟，獲得開心指數最多1500！",
-            "gameTemplate": "lamtsuen"
+            "gameTemplate": "Game1960Lamtsuen"
           },
           {
             "name": "九龍城寨",

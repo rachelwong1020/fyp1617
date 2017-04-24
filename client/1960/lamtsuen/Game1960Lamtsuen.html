@@ -1,13 +1,61 @@
 <template name="Game1960Lamtsuen">
-    <div id="game_1960_lamtsuen" class="container">
-        <img id="tree" src="/resources/games/Game1960lamtsuen/img/lamtsuen_tree.png">
-        <img id="prayitem" src="/resources/games/Game1960lamtsuen/img/prayitem.png">
-        {{#if showEnergyBar}}
-            <img id="energy_bar" src="/resources/games/Game1960lamtsuen/img/lamtsuen_energy_bar.png">
-            <img id="energy_pointer" src="/resources/games/Game1960lamtsuen/img/lamtsuen_energy_pointer.png">
+    {{#if gameDone}}
+        <div class="row center-align">
+            <div class="dialog-container container-purple large-text white-text">
+                <p>恭喜你獲得開心指數XX。現在為了保護許願樹，樹旁設置了仿真許願樹，大家都要為保育工作出一份力啊！</p>
+                <button id="1960_lamtsuen_leave" class="btn-theme white">知道！</button>
+            </div>
+        </div>
+    {{else}}
+        {{#if gameStarted}}
+            <div id="game_1960_lamtsuen" class="container">
+                <img id="prayitem" src="/resources/games/Game1960lamtsuen/img/prayitem.png">
+                {{#if showEnergyBar}}
+                    <img id="energy_bar" src="/resources/games/Game1960lamtsuen/img/lamtsuen_energy_bar.png">
+                    <img id="energy_pointer" src="/resources/games/Game1960lamtsuen/img/lamtsuen_energy_pointer.png">
+                {{/if}}
+                {{#if showResetBar}}
+                    <button id="restart_game" class="btn-theme white">Reset再黎</button>
+                {{/if}}
+            </div>
+        {{else}}
+            {{#if pageOne}}
+                <div class="dialog-container wide container-purple large-text white-text">
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/character/mingming.png">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <h4>大埔林村早在宋朝就有人聚居，許願樹被視為神靈。每逢節日慶典，村民就會參拜許願，將寶牒拋到許願樹上，據說，寶牒拋得越高，願望就會越容易實現。</h4>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button id="start_1960_lamtsuen_next" class="btn-theme white">下一頁</button>
+                        </div>
+                    </div>
+                </div>
+            {{else}}
+                <div class="dialog-container wide container-purple large-text white-text">
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/character/mingming.png">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <h4>瞄準移動中的能量帶拋出寶碟，紅色代表最大力，最多可以購買5份寶碟啊！</h4>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button id="start_1960_lamtsuen_game" class="btn-theme white">知道了！</button>
+                        </div>
+                    </div>
+                </div>
+            {{/if}}
         {{/if}}
-        {{#if showResetBar}}
-            <button id="restart_game" class="btn-theme white">Reset再黎</button>
-        {{/if}}
-    </div>
+    {{/if}}
 </template>
