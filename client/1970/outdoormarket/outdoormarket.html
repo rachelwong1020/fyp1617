@@ -1,0 +1,84 @@
+<template name="outdoormarket">
+<div class="container wide">
+    {{#if gameDone}}
+        <div class="row center-align">
+            <div class="dialog-container container-purple large-text white-text">
+                <p>謝謝！承惠${{totalPrice}}，獲得開心指數{{totalPrice}}。大笪地在香港已經成為歷史了，你能想到甚麼方法使這種傳統特色承傳下去嗎？</p>
+                <button id="game_1970_outdoormarket_leave" class="btn-theme white">知道</button>
+            </div>
+        </div>
+    {{else}}
+        <div class="row">
+            <div class="col m9 s12">
+                <div class="card product-card-master">
+                    <div class="card-content">
+                        <div class="row">
+                            {{#each product}}
+                                <div class="col m6 s12">
+                                    <div class="card product-card horizontal">
+                                        <div class="card-image">
+                                            <img src="/resources/games/Game1970outdoormarket/img/{{coverImg}}">
+                                        </div>
+                                        <div class="card-stacked">
+                                            <div class="card-content">
+                                                <span class="card-title">{{name}}</span>
+                                                <p>{{description}}</p>
+                                            </div>
+                                            <div class="card-action">
+                                                <a href="#" class="product-price">${{price}}</a>
+                                                <a id="product_add" class="waves-effect waves-light btn-floating green darken-4 right product-action"><i class="material-icons">done</i></a>
+                                                <a id="product_remove" class="{{#if hasOrderedProduct}}{{else}}disabled {{/if}}waves-effect waves-light btn-floating red darken-4 right product-action"><i class="material-icons">clear</i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m3 s12">
+                <div class="card product-invoice">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="/resources/games/Game1970outdoormarket/img/banner.jpg">
+                        </div>
+                        <div class="row center-align">
+                            <h5>大笪地</h5>
+                        </div>
+                        <div class="divider"></div>
+                        {{#each orderedProduct}}
+                            <div class="row">
+                                <div class="col s9">{{name}}</div>
+                                <div class="col s3">${{price}}</div>
+                                <!--<div class="col s2">x{{orderAmount}}</div>-->
+                            </div>
+                        {{else}}
+                            <div class="row center-align">
+                                <h5>未有貨品</h5>
+                            </div>
+                        {{/each}}
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col s6">
+                                <h5 class="right">總數</h5>
+                            </div>
+                            <div class="col s6">
+                                <h5 class="right">${{orderedAmount}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{#if hasPickedProduct}}
+                    {{#if hasEnoughMoney}}
+                        <div id="check_out" class="btn-large fluid waves-effect waves-light btn-margin">選完了</div>
+                    {{else}}
+                        <div class="btn-large fluid waves-effect waves-light btn-margin red darken-2">沒有足夠金錢:(</div>
+                    {{/if}}
+                    <div id="leave_without_checkout" class="btn-large fluid waves-effect waves-light grey btn-margin">不買了</div>
+                {{/if}}
+            </div>
+        </div>
+    {{/if}}
+</div>
+</template>

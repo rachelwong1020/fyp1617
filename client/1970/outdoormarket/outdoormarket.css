@@ -1,0 +1,42 @@
+#outdoormarket_image {
+    width: 100%;
+    height: 300px;
+}
+.outdoormarket-card .card-content {
+    height: 176px;
+    overflow: scroll;
+}
+.outdoormarket-card .card-title {
+    font-size: 20px;
+}
+.product-card {
+    border: 2px solid #b71c1c;
+}
+.product-card .card-image {
+    max-width: 30% !important;
+}
+.product-card .card-content, .product-card .card-action {
+    padding: 10px !important;
+}
+.product-card .card-content {
+    height: 102px;
+    overflow: scroll;
+}
+.product-card .product-price {
+    font-size: 1.5em;
+}
+.product-card .product-action {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+.product-card .card-title {
+    font-size: 1.5rem !important;
+}
+.product-card-master-card-title {
+    font-size: 3em !important;
+    font-weight: 500 !important;
+    color: #b71c1c;
+}
+.product-card-master-card-title .right {
+    font-size: 1rem;
+}

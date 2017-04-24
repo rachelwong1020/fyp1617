@@ -1,0 +1,93 @@
+<template name="hkcoliseum">
+    <div class="container">
+        {{#if gameStarted}}
+            {{#if gameDone}}
+                <div class="row center-align">
+                    <div class="dialog-container container-purple large-text white-text">
+                        <p>想一想，你覺得舊式電影跟現今電影最大的分別是甚麼？</p>
+                        <button id="1980_hkcoliseum_leave" class="btn-theme white">想完了！</button>
+                    </div>
+                </div>
+            {{else}}
+                <div class="row">
+                    {{#each hkcoliseum}}
+                        <div class="col m6 s12">
+                            <div class="card horizontal hkcoliseum-card">
+                                <div class="card-image valign-wrapper">
+                                    <img src="/resources/games/Game1980hkcoliseum/img/{{coverImg}}">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <span class="card-title">{{name}}</span>
+                                        <p>{{description}}</p>
+                                    </div>
+                                    <div class="card-action">
+                                        {{#if isVideoCompleted}}
+                                            <a class="green-text hkcoliseum-play-video">看過了</a>
+                                        {{else}}
+                                            {{#if hasEnoughMoney}}
+                                                <a class="hkcoliseum-play-video">我想觀看這演唱會</a>
+                                            {{else}}
+                                                <a class="red-text">你沒有足夠金錢啊:(</a>
+                                            {{/if}}
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/if}}
+        {{else}}
+            {{#if pageOne}}
+                <div class="dialog-container wide container-purple large-text white-text">
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/character/mingming.png">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <h4>1980年代是香港樂壇的輝煌全盛時期，粵語流行曲百花齊放，經典歌手輩出，配合幕後音樂人才湧現，成就了經典巨星的時代。</h4>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button id="start_1980_hkcoliseum_next" class="btn-theme white">下一頁</button>
+                        </div>
+                    </div>
+                </div>
+            {{else}}
+                <div class="dialog-container wide container-purple large-text white-text">
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="char-img">
+                                    <img src="/resources/character/mingming.png">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <h4>香港體育館又名紅館，是首屈一指的娛樂表演場地，很多歌星在這裡舉行演唱會，選擇你喜愛的演唱會，每次都會獲得開心指數！(每觀看一次演唱會需$200)</h4>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button id="start_1980_hkcoliseum_game" class="btn-theme white">知道了</button>
+                        </div>
+                    </div>
+                </div>
+            {{/if}}
+        {{/if}}
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>{{selectedName}}</h4>
+                <video id="hkcoliseum_video" class="video-js vjs-default-skin vjs-big-play-centered" controls>
+                    <source type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="{{#if isVideoPlayCompleted}}{{else}}disabled{{/if}} modal-action modal-close waves-effect waves-green btn-flat">看完</a>
+            </div>
+        </div>
+    </div>
+</template>

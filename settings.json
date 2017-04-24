@@ -146,7 +146,7 @@
             "for": "hkcoliseum",
             "btnClass": "red-btn",
             "description": "在這裡你可以欣賞演唱會，獲得開心指數最多400！",
-            "gameTemplate": "jademarket"
+            "gameTemplate": "hkcoliseum"
           },
           {
             "name": "橋底",

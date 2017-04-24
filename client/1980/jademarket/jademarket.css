@@ -1,0 +1,42 @@
+#jademarket_image {
+    width: 100%;
+    height: 300px;
+}
+.jademarket-card .card-content {
+    height: 176px;
+    overflow: scroll;
+}
+.jademarket-card .card-title {
+    font-size: 20px;
+}
+.jade-card {
+    border: 2px solid #b71c1c;
+}
+.jade-card .card-image {
+    max-width: 30% !important;
+}
+.jade-card .card-content, .jade-card .card-action {
+    padding: 10px !important;
+}
+.jade-card .card-content {
+    height: 102px;
+    /*overflow: scroll;*/
+}
+.jade-card .jade-price {
+    font-size: 1.5em;
+}
+.jade-card .jade-action {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+.jade-card .card-title {
+    font-size: 1.5rem !important;
+}
+.jade-card-master-card-title {
+    font-size: 3em !important;
+    font-weight: 500 !important;
+    color: #b71c1c;
+}
+.jade-card-master-card-title .right {
+    font-size: 1rem;
+}
