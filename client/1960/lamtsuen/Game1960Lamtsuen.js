@@ -29,6 +29,7 @@ Template.Game1960Lamtsuen.onRendered(function () {
                     Session.set('Game1960LamtsuenDameStage', Session.get('Game1960LamtsuenDameStage')+1);
                     break;
                 case 1:
+                    MainGame.increaseMp(-100);
                     clearInterval(energyPointer);
                     var energyLevel;
                     if(energyPointerCurrentPosition <= 39.75) {
