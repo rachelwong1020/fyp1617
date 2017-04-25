@@ -1,5 +1,6 @@
 Template.MainGameLayout.onRendered(function () {
     Session.set('MainGameCompletedCheckPoint', []);
+    Session.set('MainGameCurrentGame', null);
     $('.collapsible').collapsible();
     if(!Session.get('MainGameKP')) {
         Session.set('MainGameKP', 100);

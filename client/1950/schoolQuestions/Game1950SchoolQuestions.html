@@ -2,14 +2,16 @@
     <div class="dialog-container wide container-purple large-text white-text">
         {{#if gameStarted}}
             {{#if gameDone}}
-                <div class="row row-margin-0">
-                    <div class="col s4">
-                        <div class="char-img">
-                            <img src="/resources/character/mingming.png">
+                <div class="container">
+                    <div class="row row-margin-0">
+                        <div class="col s4">
+                            <div class="char-img">
+                                <img src="/resources/character/mingming.png">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col s8">
-                        <p>恭喜你學習了新知識！獲得智慧指數{{score}}！</p>
+                        <div class="col s8">
+                            <p>恭喜你學習了新知識！獲得智慧指數{{score}}！</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row center-align">
@@ -19,7 +21,7 @@
                 {{> Questions}}
             {{/if}}
         {{else}}
-            <div class="container fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col s4">
                         <div class="char-img">
