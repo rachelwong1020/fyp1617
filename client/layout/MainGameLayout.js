@@ -5,7 +5,7 @@ Template.MainGameLayout.onRendered(function () {
     if(!Session.get('MainGameKP')) {
         Session.set('MainGameKP', 100);
     }
-    if(!Session.get('MainGameMP')) {
+    if(!Session.get('MainGameMP') && Session.get('MainGameMP') != 0) {
         Session.set('MainGameMP', 1000);
     }
     if(!Session.get('MainGameHP')) {
