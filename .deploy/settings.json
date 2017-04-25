@@ -50,6 +50,117 @@
             "description": "在時裝店做裁縫賺取金錢，需要智慧指數達800才能體驗！"
           }
         ]
+      },
+      "main1960": {
+        "checkPoints": [
+          {
+            "name": "學校",
+            "for": "school",
+            "btnClass": "blue-btn",
+            "description": "在學校學習才能獲取冒險家知識，能獲得智慧指數最多300！",
+            "gameTemplate": "Game1960SchoolQuestions"
+          },
+          {
+            "name": "林村",
+            "for": "lamtsuen",
+            "btnClass": "red-btn",
+            "description": "在林村你可以拋寶碟，獲得開心指數最多1500！",
+            "gameTemplate": "Game1960Lamtsuen"
+          },
+          {
+            "name": "九龍城寨",
+            "for": "kowloon",
+            "btnClass": "red-btn",
+            "description": "在這裡你要通過冒險家考驗，獲得智慧指數最多500！",
+            "gameTemplate": "kowloon"
+          },
+          {
+            "name": "塑膠花廠",
+            "for": "factory",
+            "btnClass": "yellow-btn",
+            "description": "在塑膠花廠穿膠花能賺取金錢！"
+          },
+          {
+            "name": "船塢",
+            "for": "ship",
+            "btnClass": "yellow-btn",
+            "description": "在船塢造船賺取金錢，需要智慧指數達2000才能體驗！"
+          }
+        ]
+      },
+      "main1970": {
+        "checkPoints": [
+          {
+            "name": "學校",
+            "for": "school",
+            "btnClass": "blue-btn",
+            "description": "在學校學習才能獲取冒險家知識，能獲得智慧指數最多300！",
+            "gameTemplate": "Game1970SchoolQuestions"
+          },
+          {
+            "name": "大笪地",
+            "for": "school",
+            "btnClass": "red-btn",
+            "description": "在這裡你可以買你喜愛的貨品，獲得開心指數最多500！",
+            "gameTemplate": "outdoormarket"
+          },
+          {
+            "name": "電影院",
+            "for": "cinema",
+            "btnClass": "red-btn",
+            "description": "在這裡你可以欣賞舊式電影，獲得開心指數最多1800！",
+            "gameTemplate": "cinema"
+          },
+          {
+            "name": "橋底",
+            "for": "bridge",
+            "btnClass": "yellow-btn",
+            "description": "在這裡體驗為顧客擦鞋，賺取金錢！"
+          },
+          {
+            "name": "當鋪",
+            "for": "pawnshop",
+            "btnClass": "yellow-btn",
+            "description": "在這裡體驗當一名典當商，賺取金錢！"
+          }
+        ]
+      },
+      "main1980": {
+        "checkPoints": [
+          {
+            "name": "學校",
+            "for": "school",
+            "btnClass": "blue-btn",
+            "description": "在學校學習才能獲取冒險家知識，能獲得智慧指數最多300！",
+            "gameTemplate": "Game1980SchoolQuestions"
+          },
+          {
+            "name": "玉器市場",
+            "for": "jademarket",
+            "btnClass": "red-btn",
+            "description": "在這裡你可以買你喜愛的玉器，獲得開心指數最多1000！",
+            "gameTemplate": "jademarket"
+          },
+          {
+            "name": "香港體育館",
+            "for": "hkcoliseum",
+            "btnClass": "red-btn",
+            "description": "在這裡你可以欣賞演唱會，獲得開心指數最多400！",
+            "gameTemplate": "hkcoliseum"
+          },
+          {
+            "name": "橋底",
+            "for": "bridge",
+            "btnClass": "yellow-btn",
+            "description": "在這裡體驗為顧客打小人，賺取金錢！"
+          },
+          {
+            "name": "教育局",
+            "for": "bureau",
+            "btnClass": "yellow-btn",
+            "description": "在這裡體驗當一名老師，賺取金錢！"
+          }
+        ]
       }
     }
   },
