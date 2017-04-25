@@ -1,6 +1,3 @@
-/**
- * Created by Ansonmouse on 22/4/2017.
- */
 Template.Game1960Lamtsuen.onCreated(function () {
     Session.set('Game1960LamtsuenDameStage', 0);
     Session.set('Game1960LamtsuenCompletedCount', 0);
