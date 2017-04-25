@@ -57,7 +57,20 @@ Template.MainGameLayout.events({
         Session.set('MainGameCurrentGame', 'gamebg');
     },
     'click #game_badge': function () {
-        Session.set('MainGameCurrentGame', 'badge1950');
+        switch (Session.get('currentMain')) {
+            case '1950':
+                Session.set('MainGameCurrentGame', 'badge1950');
+                break;
+            case '1960':
+                Session.set('MainGameCurrentGame', 'badge1960');
+                break;
+            case '1970':
+                Session.set('MainGameCurrentGame', 'badge1970');
+                break;
+            case '1980':
+                Session.set('MainGameCurrentGame', 'badge1980');
+                break;
+        }
     },
     'click #main_game_leave': function () {
         Session.set('MainGameCompletedCheckPoint', []);

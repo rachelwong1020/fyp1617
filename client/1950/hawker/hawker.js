@@ -103,6 +103,7 @@ function handleCardDrop( event, ui ) {
     // and reset the cards for another go
 
     if ( correctCards == 3 ) {
+        MainGame.increaseKp(300);
         Session.set('game1950HawkerDone', true);
     }
 }
